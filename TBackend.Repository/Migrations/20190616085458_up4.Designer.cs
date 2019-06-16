@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TBackend.Repository.context;
 
 namespace TBackend.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190616085458_up4")]
+    partial class up4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -146,60 +148,60 @@ namespace TBackend.Repository.Migrations
                 {
                     b.HasOne("TBackend.Entity.Team", "Team1")
                         .WithMany()
-                        .HasForeignKey("Team1Id")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("Team1Id");
+                    
 
                     b.HasOne("TBackend.Entity.Team", "Team2")
                         .WithMany()
-                        .HasForeignKey("Team2Id")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("Team2Id");
+                     
 
                     b.HasOne("TBackend.Entity.Tournament", "Tournament")
                         .WithMany()
-                        .HasForeignKey("TournamentId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("TournamentId");
+                    
                 });
 
             modelBuilder.Entity("TBackend.Entity.Player", b =>
                 {
                     b.HasOne("TBackend.Entity.Team", "Team")
                         .WithMany()
-                        .HasForeignKey("TeamId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("TeamId");
+                      
                 });
 
             modelBuilder.Entity("TBackend.Entity.Statistics", b =>
                 {
                     b.HasOne("TBackend.Entity.Match", "Match")
                         .WithMany()
-                        .HasForeignKey("MatchId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("MatchId");
+                 
 
                     b.HasOne("TBackend.Entity.Player", "Player")
                         .WithMany()
-                        .HasForeignKey("PlayerId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("PlayerId");
+                   
                 });
 
             modelBuilder.Entity("TBackend.Entity.Team", b =>
                 {
                     b.HasOne("TBackend.Entity.Tournament", "Tournament")
                         .WithMany("Teams")
-                        .HasForeignKey("TournamentId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("TournamentId");
+                   
                 });
 
             modelBuilder.Entity("TBackend.Entity.Tournament", b =>
                 {
                     b.HasOne("TBackend.Entity.Mode", "Mode")
                         .WithMany()
-                        .HasForeignKey("ModeId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("ModeId");
+               
 
                     b.HasOne("TBackend.Entity.Player", "Player")
                         .WithMany()
-                        .HasForeignKey("PlayerId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("PlayerId");
+                 
                 });
 #pragma warning restore 612, 618
         }
