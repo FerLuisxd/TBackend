@@ -1,0 +1,183 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectName": "TBackend.Entity",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "projectName": "TBackend.Repository",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj",
+        "projectName": "TBackend.Service",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj",
+        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
+              },
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
