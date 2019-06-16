@@ -42,6 +42,18 @@ namespace TBackend.Repository.Migrations
                     b.ToTable("Matchs");
                 });
 
+            modelBuilder.Entity("TBackend.Entity.Mode", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Format");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Modes");
+                });
+
             modelBuilder.Entity("TBackend.Entity.Player", b =>
                 {
                     b.Property<int>("Id")
@@ -119,17 +131,21 @@ namespace TBackend.Repository.Migrations
 
                     b.Property<string>("Date");
 
-                    b.Property<int>("Host");
-
-                    b.Property<int>("Mode");
+                    b.Property<int>("ModeId");
 
                     b.Property<int>("NTeams");
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("Winner");
+                    b.Property<int>("PlayerId");
+
+                    b.Property<int>("WinnerId");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ModeId");
+
+                    b.HasIndex("PlayerId");
 
                     b.ToTable("Tournaments");
                 });
@@ -177,6 +193,19 @@ namespace TBackend.Repository.Migrations
                     b.HasOne("TBackend.Entity.Tournament", "Tournament")
                         .WithMany("Teams")
                         .HasForeignKey("TournamentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("TBackend.Entity.Tournament", b =>
+                {
+                    b.HasOne("TBackend.Entity.Mode", "Mode")
+                        .WithMany()
+                        .HasForeignKey("ModeId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("TBackend.Entity.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

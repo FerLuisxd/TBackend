@@ -1,42 +1,41 @@
 using System.Collections.Generic;
 using TBackend.Entity;
-using TBackend.Repositoy;
+using TBackend.Repository;
 
 namespace TBackend.Service.implementation
 {
     public class MatchService : IMatchService
     {
 
-        private IMatchRepository MatchRepository;
-        public MatchService(IMatchRepository MatchRepository)
+        private IMatchRepository matchRepository;
+        public MatchService(IMatchRepository matchRepository)
         {
-            this.MatchRepository = MatchRepository;
+            this.matchRepository=matchRepository;
         }
         
+        public bool Delete(int id)
+        {
+            return matchRepository.Delete(id);
+        }
+
         public Match Get(int id)
         {
-            throw new System.NotImplementedException();
+            return matchRepository.Get(id);
         }
 
         public IEnumerable<Match> GetAll()
         {
-            throw new System.NotImplementedException();
+           return matchRepository.GetAll();
         }
 
         public bool Save(Match entity)
         {
-            throw new System.NotImplementedException();
+            return matchRepository.Save(entity);
         }
 
         public bool Update(Match entity)
         {
-            throw new System.NotImplementedException();
+            return matchRepository.Update(entity);
         }
-
-        public bool Delete(int id)
-        {
-            throw new System.NotImplementedException();
-        }
-
     }
 }

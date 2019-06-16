@@ -9,7 +9,6 @@ namespace TBackend.Entity
         public string Name { get; set; }
         public string Date { get; set; }
         public int WinnerId { get; set; }
-        public Team Winner { get; set; }
         public int PlayerId { get; set; }
         public Player Player { get; set; }
         public int NTeams { get; set; }
