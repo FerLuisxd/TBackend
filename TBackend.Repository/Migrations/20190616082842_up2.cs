@@ -2,7 +2,7 @@
 
 namespace TBackend.Repository.Migrations
 {
-    public partial class lol : Migration
+    public partial class up2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,7 +45,7 @@ namespace TBackend.Repository.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     Name = table.Column<string>(nullable: true),
                     Date = table.Column<string>(nullable: true),
-                    WinnerId = table.Column<int>(nullable: false),
+                    Winner = table.Column<string>(nullable: true),
                     PlayerId = table.Column<int>(nullable: false),
                     NTeams = table.Column<int>(nullable: false),
                     ModeId = table.Column<int>(nullable: false)
@@ -92,7 +92,7 @@ namespace TBackend.Repository.Migrations
                     Fase = table.Column<int>(nullable: false),
                     Team1Id = table.Column<int>(nullable: false),
                     Team2Id = table.Column<int>(nullable: false),
-                    TournamentId = table.Column<int>(nullable: true)
+                    TournamentId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -114,7 +114,7 @@ namespace TBackend.Repository.Migrations
                         column: x => x.TournamentId,
                         principalTable: "Tournaments",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -124,10 +124,6 @@ namespace TBackend.Repository.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
                     Name = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true),
-                    Username = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
-                    Range = table.Column<short>(nullable: false),
                     GamePreferences = table.Column<string>(nullable: true),
                     TeamId = table.Column<int>(nullable: false)
                 },

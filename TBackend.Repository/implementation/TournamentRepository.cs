@@ -71,7 +71,7 @@ namespace TBackend.Repository.implementation
                  );
 
                  TournamentOrigina.Id=entity.Id;
-                 TournamentOrigina.WinnerId=entity.WinnerId;
+                 TournamentOrigina.Winner=entity.Winner;
                  TournamentOrigina.ModeId=entity.ModeId;
                  TournamentOrigina.PlayerId=entity.PlayerId;
                  TournamentOrigina.Date=entity.Date;

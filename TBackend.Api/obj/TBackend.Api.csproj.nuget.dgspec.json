@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj": {}
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj",
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj",
         "projectName": "TBackend.Api",
-        "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\TBackend.Api.csproj",
         "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\obj\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
-                "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
               },
-              "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj": {
-                "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj"
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj",
         "projectName": "TBackend.Entity",
-        "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj",
         "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\obj\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -130,14 +130,14 @@
         }
       }
     },
-    "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj",
         "projectName": "TBackend.Repository",
-        "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj",
         "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\obj\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -156,8 +156,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
-                "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
               }
             }
           }
@@ -194,14 +194,14 @@
         }
       }
     },
-    "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj",
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj",
         "projectName": "TBackend.Service",
-        "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\TBackend.Service.csproj",
         "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\obj\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -220,11 +220,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
-                "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Entity\\TBackend.Entity.csproj"
               },
-              "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj": {
-                "projectPath": "c:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj"
+              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj": {
+                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TrabajoFinalWeb\\Backend\\TBackend.Repository\\TBackend.Repository.csproj"
               }
             }
           }

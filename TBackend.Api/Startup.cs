@@ -43,11 +43,17 @@ namespace TBackend.Api
             services.AddTransient<ITournamentRepository, TournamentRepository> ();
             services.AddTransient<ITournamentService, TournamentService> ();
 
-            services.AddTransient<IMedicamentoRepository, MedicamentoRepository> ();
-            services.AddTransient<IMedicamentoService, MedicamentoService> ();
+            services.AddTransient<ITeamRepository, TeamRepository> ();
+            services.AddTransient<ITeamService, TeamService> ();
 
-            services.AddTransient<IOrdenRepository, OrdenRepository> ();
-            services.AddTransient<IOrdenService, OrdenService> ();
+            services.AddTransient<IStatisticsRepository, StatisticsRepository> ();
+            services.AddTransient<IStatisticsService, StatisticsService> ();
+
+            services.AddTransient<IModeRepository, ModeRepository> ();
+            services.AddTransient<IModeService, ModeService> ();
+
+             services.AddTransient<IMatchRepository, MatchRepository> ();
+            services.AddTransient<IMatchService, MatchService> ();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSwaggerGen(swagger =>

@@ -72,8 +72,6 @@ namespace TBackend.Repository.implementation
 
                  PlayerOrigina.Id=entity.Id;
                  PlayerOrigina.GamePreferences=entity.GamePreferences;
-                 PlayerOrigina.Password=entity.Password;
-                 PlayerOrigina.Username=entity.Username;
                  PlayerOrigina.TeamId=entity.TeamId;
                  PlayerOrigina.Name=entity.Name;
 
