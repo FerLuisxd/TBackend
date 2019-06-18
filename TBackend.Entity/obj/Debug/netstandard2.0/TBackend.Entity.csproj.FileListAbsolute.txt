@@ -16,3 +16,12 @@ C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TrabajoFinalWeb\Backend\TBackend.En
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TrabajoFinalWeb\Backend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TrabajoFinalWeb\Backend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TrabajoFinalWeb\Backend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.deps.json
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csprojAssemblyReference.cache
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csproj.CoreCompileInputs.cache
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfoInputs.cache
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\ferlu\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb

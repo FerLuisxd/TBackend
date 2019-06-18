@@ -71,6 +71,20 @@ namespace TBackend.Repository.implementation
         {
             throw new System.NotImplementedException();
         }
+        public List<Statistics> FindAllStadistics(int id){
+            var result = new List<Statistics>();
+            try
+            {
+                result = context.Statistics.Where(x=> x.MatchId == id).ToList();
+            }
+
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
 
     }
 }

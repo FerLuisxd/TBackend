@@ -71,6 +71,35 @@ namespace TBackend.Repository.implementation
         {
             throw new System.NotImplementedException();
         }
+        public List<Match> FindAllMatches(int id)
+        {
 
+            var result = new List<Match>();
+            try
+            {
+                result = context.Matchs.Where(x=> x.TournamentId == id).ToList();
+            }
+
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
+        public int ReturnTournamentId(int match_id){
+            var result = new Match();
+            try
+            {
+                result = context.Matchs.Single(x => x.Id == match_id);
+            }
+
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result.TournamentId;
+        }
     }
 }

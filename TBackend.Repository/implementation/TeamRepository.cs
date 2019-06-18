@@ -66,21 +66,21 @@ namespace TBackend.Repository.implementation
         {
             try
             {
-                 var TeamOrigina = context.Teams.Single(
-                     x => x.Id == entity.Id
-                 );
+                var TeamOrigina = context.Teams.Single(
+                    x => x.Id == entity.Id
+                );
 
-                 TeamOrigina.Id=entity.Id;
-                 TeamOrigina.NMembers=entity.NMembers;
-                 TeamOrigina.TournamentId=entity.TournamentId;
-                 TeamOrigina.Name=entity.Name;
+                TeamOrigina.Id = entity.Id;
+                TeamOrigina.NMembers = entity.NMembers;
+                TeamOrigina.TournamentId = entity.TournamentId;
+                TeamOrigina.Name = entity.Name;
 
-                 context.Update(TeamOrigina);
-                 context.SaveChanges();
+                context.Update(TeamOrigina);
+                context.SaveChanges();
             }
             catch (System.Exception)
             {
-                
+
                 return false;
             }
             return true;
@@ -90,6 +90,20 @@ namespace TBackend.Repository.implementation
         {
             throw new System.NotImplementedException();
         }
+        public List<Team> FindAllTeams(int id)
+        {
+            var result = new List<Team>();
+            try
+            {
+                result = context.Teams.Where(x=> x.TournamentId == id).ToList();
+            }
 
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
     }
 }
