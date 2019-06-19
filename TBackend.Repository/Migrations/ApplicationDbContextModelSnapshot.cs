@@ -63,7 +63,7 @@ namespace TBackend.Repository.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<int>("TeamId");
+                    b.Property<int?>("TeamId");
 
                     b.HasKey("Id");
 
@@ -107,7 +107,7 @@ namespace TBackend.Repository.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<int>("TournamentId");
+                    b.Property<int?>("TournamentId");
 
                     b.HasKey("Id");
 
@@ -164,8 +164,7 @@ namespace TBackend.Repository.Migrations
                 {
                     b.HasOne("TBackend.Entity.Team", "Team")
                         .WithMany()
-                        .HasForeignKey("TeamId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("TeamId");
                 });
 
             modelBuilder.Entity("TBackend.Entity.Statistics", b =>
@@ -185,8 +184,7 @@ namespace TBackend.Repository.Migrations
                 {
                     b.HasOne("TBackend.Entity.Tournament", "Tournament")
                         .WithMany("Teams")
-                        .HasForeignKey("TournamentId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("TournamentId");
                 });
 
             modelBuilder.Entity("TBackend.Entity.Tournament", b =>

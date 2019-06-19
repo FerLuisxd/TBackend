@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TBackend.Repository.Migrations
 {
-    public partial class up2 : Migration
+    public partial class update5 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -44,7 +45,7 @@ namespace TBackend.Repository.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
                     Name = table.Column<string>(nullable: true),
-                    Date = table.Column<string>(nullable: true),
+                    Date = table.Column<DateTime>(nullable: false),
                     Winner = table.Column<string>(nullable: true),
                     PlayerId = table.Column<int>(nullable: false),
                     NTeams = table.Column<int>(nullable: false),
@@ -69,7 +70,7 @@ namespace TBackend.Repository.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     Name = table.Column<string>(nullable: true),
                     NMembers = table.Column<int>(nullable: false),
-                    TournamentId = table.Column<int>(nullable: false)
+                    TournamentId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -79,7 +80,7 @@ namespace TBackend.Repository.Migrations
                         column: x => x.TournamentId,
                         principalTable: "Tournaments",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -125,7 +126,7 @@ namespace TBackend.Repository.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     Name = table.Column<string>(nullable: true),
                     GamePreferences = table.Column<string>(nullable: true),
-                    TeamId = table.Column<int>(nullable: false)
+                    TeamId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -135,7 +136,7 @@ namespace TBackend.Repository.Migrations
                         column: x => x.TeamId,
                         principalTable: "Teams",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
