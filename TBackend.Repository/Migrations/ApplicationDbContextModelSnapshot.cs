@@ -23,13 +23,13 @@ namespace TBackend.Repository.Migrations
 
                     b.Property<int>("Fase");
 
-                    b.Property<int>("Team1Id");
+                    b.Property<int?>("Team1Id");
 
-                    b.Property<int>("Team2Id");
+                    b.Property<int?>("Team2Id");
 
                     b.Property<int>("TournamentId");
 
-                    b.Property<bool>("Winner");
+                    b.Property<int?>("WinnerId");
 
                     b.HasKey("Id");
 
@@ -38,6 +38,8 @@ namespace TBackend.Repository.Migrations
                     b.HasIndex("Team2Id");
 
                     b.HasIndex("TournamentId");
+
+                    b.HasIndex("WinnerId");
 
                     b.ToTable("Matchs");
                 });
@@ -146,18 +148,20 @@ namespace TBackend.Repository.Migrations
                 {
                     b.HasOne("TBackend.Entity.Team", "Team1")
                         .WithMany()
-                        .HasForeignKey("Team1Id")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("Team1Id");
 
                     b.HasOne("TBackend.Entity.Team", "Team2")
                         .WithMany()
-                        .HasForeignKey("Team2Id")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("Team2Id");
 
                     b.HasOne("TBackend.Entity.Tournament", "Tournament")
                         .WithMany()
                         .HasForeignKey("TournamentId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("TBackend.Entity.Team", "Winner")
+                        .WithMany()
+                        .HasForeignKey("WinnerId");
                 });
 
             modelBuilder.Entity("TBackend.Entity.Player", b =>

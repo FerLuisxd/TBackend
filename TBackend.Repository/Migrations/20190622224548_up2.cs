@@ -89,10 +89,10 @@ namespace TBackend.Repository.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
-                    Winner = table.Column<short>(nullable: false),
+                    WinnerId = table.Column<int>(nullable: true),
                     Fase = table.Column<int>(nullable: false),
-                    Team1Id = table.Column<int>(nullable: false),
-                    Team2Id = table.Column<int>(nullable: false),
+                    Team1Id = table.Column<int>(nullable: true),
+                    Team2Id = table.Column<int>(nullable: true),
                     TournamentId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -103,19 +103,25 @@ namespace TBackend.Repository.Migrations
                         column: x => x.Team1Id,
                         principalTable: "Teams",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Matchs_Teams_Team2Id",
                         column: x => x.Team2Id,
                         principalTable: "Teams",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Matchs_Tournaments_TournamentId",
                         column: x => x.TournamentId,
                         principalTable: "Tournaments",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Matchs_Teams_WinnerId",
+                        column: x => x.WinnerId,
+                        principalTable: "Teams",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -153,6 +159,11 @@ namespace TBackend.Repository.Migrations
                 name: "IX_Matchs_TournamentId",
                 table: "Matchs",
                 column: "TournamentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Matchs_WinnerId",
+                table: "Matchs",
+                column: "WinnerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Players_TeamId",
