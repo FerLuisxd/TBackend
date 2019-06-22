@@ -34,3 +34,15 @@ C:\Users\ferlu\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\T
 C:\Users\ferlu\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csproj.CopyComplete
 C:\Users\ferlu\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.dll
 C:\Users\ferlu\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.pdb
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Repository.deps.json
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Repository.dll
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Repository.pdb
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csprojAssemblyReference.cache
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.AssemblyInfoInputs.cache
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.AssemblyInfo.cs
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csproj.CopyComplete
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.dll
+C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.pdb

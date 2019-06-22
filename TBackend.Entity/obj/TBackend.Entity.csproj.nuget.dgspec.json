@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {}
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
         "projectName": "TBackend.Entity",
-        "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
         "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\obj\\",
+        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

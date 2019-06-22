@@ -51,13 +51,14 @@ namespace TBackend.Repository.implementation
         {
             try
             {
+
                 context.Add(entity);
                 context.SaveChanges();
             }
             catch (System.Exception)
             {
 
-                return false;
+                throw;
             }
             return true;
         }

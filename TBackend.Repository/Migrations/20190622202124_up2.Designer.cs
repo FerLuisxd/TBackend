@@ -9,8 +9,8 @@ using TBackend.Repository.context;
 namespace TBackend.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190619125800_update5")]
-    partial class update5
+    [Migration("20190622202124_up2")]
+    partial class up2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
