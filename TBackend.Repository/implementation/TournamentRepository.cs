@@ -56,8 +56,7 @@ namespace TBackend.Repository.implementation
             }
             catch (System.Exception)
             {
-
-                return false;
+                throw;
             }
             return true;
         }
@@ -93,6 +92,20 @@ namespace TBackend.Repository.implementation
         {
             throw new System.NotImplementedException();
         }
+        public List<Tournament> FindHost(int id){
+            
+            var result = new List<Tournament>();
+            try
+            {
+                result = context.Tournaments.Where(x=> x.PlayerId ==id).ToList();
+            }
 
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
     }
 }
