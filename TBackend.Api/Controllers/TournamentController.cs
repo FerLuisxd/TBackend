@@ -20,7 +20,7 @@ namespace TBackend.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                tournamentService.GetAll()
+                tournamentService.GetAllTournaments()
             );
         }
          [HttpGet("{id}")]

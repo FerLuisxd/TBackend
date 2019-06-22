@@ -8,4 +8,4 @@ namespace TBackend.Entity
         public int? TournamentId { get; set; }
         public Tournament Tournament { get; set; }
     }
-}
+} 

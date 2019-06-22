@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TBackend.Entity;
 using TBackend.Repository;
 using System;
-
+using TBackend.Repository.dto;
 
 namespace TBackend.Service.implementation
 {
@@ -130,6 +130,11 @@ namespace TBackend.Service.implementation
         public IEnumerable<Tournament> GetAll()
         {
             return tournamentRepository.GetAll();
+        }
+
+        public IEnumerable<TournamentDto> GetAllTournaments()
+        {
+            return tournamentRepository.GetAllTournaments();
         }
 
         public bool Save(Tournament entity)

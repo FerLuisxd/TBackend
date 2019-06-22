@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using TBackend.Entity;
 using TBackend.Repository.context;
+using Microsoft.EntityFrameworkCore;
+using TBackend.Repository.dto;
 
 namespace TBackend.Repository.implementation
 {
@@ -30,21 +32,30 @@ namespace TBackend.Repository.implementation
             return result;
         }
 
-        public IEnumerable<Tournament> GetAll()
+        public IEnumerable<TournamentDto> GetAllTournaments()
         {
 
-            var result = new List<Tournament>();
-            try
-            {
-                result = context.Tournaments.ToList();
-            }
+               var  result = context.Tournaments
+                .Include(t => t.Player )
+                .Include(t=> t.Teams)
+                .Include(t=> t.Mode)
+                .ToList();
 
-            catch (System.Exception)
-            {
+                return result.Select(o=> new TournamentDto{
+                    Id=o.Id,
+                    ModeId = o.ModeId,
+                    ModeFormat= o.Mode.Format,
+                    Winner = o.Winner,
+                    Name = o.Name,
+                    Date = o.Date,
+                    PlayerId = o.PlayerId,
+                    PlayerName = o.Player.Name,
+                    Teams = o.Teams,
+                    NTeams= o.NTeams
+                });
+            
 
-                throw;
-            }
-            return result;
+           // return result;
         }
 
         public bool Save(Tournament entity)
@@ -106,6 +117,11 @@ namespace TBackend.Repository.implementation
                 throw;
             }
             return result;
+        }
+
+        public IEnumerable<Tournament> GetAll()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -17,6 +17,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Swagger;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+
 namespace TBackend.Api
 {
     public class Startup
@@ -32,7 +35,10 @@ namespace TBackend.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // services.AddE
-
+                        services.AddMvc().AddJsonOptions(options => {
+        options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+    });
 
             services.AddDbContext<ApplicationDbContext>(options =>
      options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
