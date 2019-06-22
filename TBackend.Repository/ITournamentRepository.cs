@@ -12,5 +12,7 @@ namespace TBackend.Repository
     {
         List<Tournament> FindHost(int id);
         IEnumerable<TournamentDto> GetAllTournaments();
+        bool CanGenerate(int id);
+        TournamentDto getOneTournament(int id);
     }
 }

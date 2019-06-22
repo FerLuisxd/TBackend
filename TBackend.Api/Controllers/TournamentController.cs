@@ -27,7 +27,7 @@ namespace TBackend.Api.Controllers
         public ActionResult GetId(int id)
         {
             return Ok(
-                tournamentService.Get(id)
+                tournamentService.GetOneTournament(id)
             );
         }
 

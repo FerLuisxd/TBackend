@@ -3,6 +3,7 @@ using TBackend.Entity;
 using TBackend.Repository;
 using System;
 using TBackend.Repository.dto;
+using System.Linq;
 
 namespace TBackend.Service.implementation
 {
@@ -30,31 +31,39 @@ namespace TBackend.Service.implementation
 
         public bool CanGenerate(int tournamentId)
         {
-            throw new NotImplementedException();
+            return tournamentRepository.CanGenerate(tournamentId);
         }
 
         public bool Delete(int id)
         {
             return tournamentRepository.Delete(id);
         }
-
-        public void Fase(List<Team> teams, Tournament tournament, int fase)
-        {
-            List<Match> matches;//= modeService.GenerateMatchesMode1(teams);
+        
+        public List<Match> generateMatches(int tournamentId){
+            List<Match> matches;
+            TournamentDto tournament = this.GetOneTournament(tournamentId);
             switch (tournament.ModeId)
             {
                 case 1:
                     {
-                        matches = modeService.GenerateMatchesMode1(teams);
+                        matches = modeService.GenerateMatchesMode1(tournament.Teams.ToList());
                         break;
                     }
                 default:
                     {
-                        matches = modeService.GenerateMatchesMode1(teams);
+                        matches = modeService.GenerateMatchesMode1(tournament.Teams.ToList());
                         break;
                     }
             }
+            return matches;
+        }
+        public void Fase(List<Team> teams, Tournament tournament, int fase)//Solo tournamentId
+        {
+            
+            if(this.CanGenerate(tournament.Id)){
+            var matches = this.generateMatches(tournament.Id);
 
+            ///TODO 
             Team winner;
             List<Team> aux;
             List<Team> winteam = new List<Team>();
@@ -123,6 +132,7 @@ namespace TBackend.Service.implementation
                 else { Fase(winteam, tournament, fase); }
 
             }
+            }
         }
 
         public Tournament Get(int id)
@@ -159,6 +169,11 @@ namespace TBackend.Service.implementation
                     return tournamentRepository.Update(entity);
                 else return false;
             else return false;
+        }
+
+        public TournamentDto GetOneTournament(int id)
+        {
+            return tournamentRepository.getOneTournament(id);
         }
     }
 }

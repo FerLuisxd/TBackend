@@ -11,5 +11,6 @@ namespace TBackend.Service
     void Fase(List<Team> teams, Tournament Tournament, int fase);
     bool CanGenerate(int tournamentId);
     IEnumerable<TournamentDto> GetAllTournaments();
+    TournamentDto GetOneTournament(int id);
     }
 }
