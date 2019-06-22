@@ -91,5 +91,20 @@ namespace TBackend.Repository.implementation
             throw new System.NotImplementedException();
         }
 
+        public List<Player> getPlayersFromTeamId(int id)
+        {
+            var result = new List<Player>();
+            try
+            {
+                result = context.Players.Where(x=> x.TeamId == id).ToList();
+            }
+
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
     }
 }

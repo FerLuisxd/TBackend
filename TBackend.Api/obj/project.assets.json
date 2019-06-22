@@ -12466,32 +12466,34 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
       "projectName": "TBackend.Api",
-      "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
+      "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
       "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Api\\obj\\",
+      "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
-              "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
+            "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+              "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
             },
-            "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {
-              "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Service\\TBackend.Service.csproj"
+            "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {
+              "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\TBackend.Service.csproj"
             }
           }
         }
