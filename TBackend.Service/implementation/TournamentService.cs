@@ -15,12 +15,17 @@ namespace TBackend.Service.implementation
         private IStatisticsService statdisticsService;
         private IPlayerService playerService;
         public TournamentService(ITournamentRepository tournamentRepository)
+        //  IModeService modeService, IMatchService matchService,
+        // IStatisticsService statdisticsService,
+        // IPlayerService playerService)
+        // 
         {
-            //this.matchService = matchService;
             this.tournamentRepository = tournamentRepository;
-           // this.modeService = modeService;
-            //this.statdisticsService = statdisticsService;
-           // this.playerService = playerService;
+            // this.matchService = matchService;
+            
+            // this.modeService = modeService;
+            // this.statdisticsService = statdisticsService;
+            // this.playerService = playerService;
         }
 
         public bool CanGenerate(int tournamentId)

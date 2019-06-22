@@ -41,7 +41,7 @@ namespace TBackend.Service.implementation
             if (entity.TeamId != null)
             {
                 Team team = teamService.Get(entity.TeamId.GetValueOrDefault());
-                team.NMembers = team.NMembers+1;
+                team.NMembers = team.NMembers + 1;
                 teamService.Update(team);
             }
             return playerRepository.Save(entity);
@@ -49,6 +49,19 @@ namespace TBackend.Service.implementation
 
         public bool Update(Player entity)
         {
+            Team old = teamService.Get(entity.Id);
+            if (old.TournamentId != null)
+            {
+                Team team = teamService.Get(entity.TeamId.GetValueOrDefault());
+                team.NMembers = team.NMembers - 1;
+                teamService.Update(team);
+            }
+            if (entity.TeamId != null)
+            {
+                Team team = teamService.Get(entity.TeamId.GetValueOrDefault());
+                team.NMembers = team.NMembers + 1;
+                teamService.Update(team);
+            }
             return playerRepository.Update(entity);
         }
     }

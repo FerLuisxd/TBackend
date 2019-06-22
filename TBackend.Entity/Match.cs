@@ -10,7 +10,7 @@ namespace TBackend.Entity
         public Team Team1 { get; set; }
         public Team Team2 { get; set; }
         public int TournamentId { get; set; }
-        public Tournament Tournament { get; set; }\
+        public Tournament Tournament { get; set; }
         //hola
     }
 }

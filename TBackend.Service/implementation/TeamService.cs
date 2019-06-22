@@ -13,7 +13,7 @@ namespace TBackend.Service.implementation
         public TeamService(ITeamRepository teamRepository, ITournamentService tournamentService)
         {
             this.teamRepository=teamRepository;
-            this.tournamentService= new TournamentService();
+            this.tournamentService= tournamentService;
             //this.tournamentService = HttpContext.RequestServices.GetService(typeof(ISomeService));
         }
         
@@ -45,6 +45,12 @@ namespace TBackend.Service.implementation
 
         public bool Update(Team entity)
         {
+            Team old = teamRepository.Get(entity.Id);
+            if(old.TournamentId != null){
+                Tournament tournament = tournamentService.Get(entity.TournamentId.GetValueOrDefault());
+                tournament.NTeams = tournament.NTeams-1;
+                tournamentService.Update(tournament);
+            }
             if (entity.TournamentId != null)
             {
                 Tournament tournament = tournamentService.Get(entity.TournamentId.GetValueOrDefault());
