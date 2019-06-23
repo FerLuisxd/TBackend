@@ -11,5 +11,6 @@ namespace TBackend.Service
         IEnumerable<MatchDto> getMatchesTournamentId(int id);
         MatchDto getOneMatch(int id);
         IEnumerable<MatchDto> getAllMaches();
+        IEnumerable<MatchDto> getMatchesTeamId(int id);
     }
 }

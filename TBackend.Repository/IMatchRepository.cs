@@ -13,6 +13,7 @@ namespace TBackend.Repository
          List<Match> FindAllMatches(int id);
         int ReturnTournamentId(int match_id);    
         IEnumerable<MatchDto> getMatchesTournamentId(int id);
+        IEnumerable<MatchDto> getMatchesTeamId(int id);
         IEnumerable<MatchDto> getMatches();
         MatchDto getMatch(int id);
     }

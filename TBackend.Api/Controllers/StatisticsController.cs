@@ -37,6 +37,14 @@ namespace TBackend.Api.Controllers
                 statisticsService.getAllStatisticsMatchId(id)
             );
         }
+
+        [HttpGet("player/{id}")]
+        public ActionResult getStatsticsPlayer(int id)
+        {
+            return Ok(
+                statisticsService.getStatisticsPlayer(id)
+            );
+        }
         [HttpPost]
         public ActionResult Post([FromBody] Statistics statistics)
         {

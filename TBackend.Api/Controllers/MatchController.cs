@@ -38,6 +38,13 @@ namespace TBackend.Api.Controllers
                 matchService.getMatchesTournamentId(id)
             );
         }
+        [HttpGet("team/{id}")]
+        public ActionResult getTeam(int id)
+        {
+            return Ok(
+                matchService.getMatchesTeamId(id)
+            );
+        }
 
         [HttpPost]
         public ActionResult Post([FromBody] Match match)

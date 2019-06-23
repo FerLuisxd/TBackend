@@ -116,7 +116,8 @@ namespace TBackend.Service.implementation
                 Console.WriteLine("IGUAL");
                 if (entity.Date > DateTime.Now.AddDays(-1))//24 HORAS ANTES MAXIMO PARA EDITAR
                     return tournamentRepository.Update(entity);
-                else return false;}
+                else return false;
+                }
             else return false;
         }
 

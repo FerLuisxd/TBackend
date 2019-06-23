@@ -161,5 +161,27 @@ namespace TBackend.Repository.implementation
             }
             return result;
         }
+
+        public IEnumerable<StatisticsDto> getStatisticsPlayer(int id)
+        {
+             var result = context.Statistics
+            .Include(t => t.Player)
+            .Include(t => t.Match)
+            .Where(x => x.PlayerId == id)
+            .ToList();
+
+            return result.Select(o => new StatisticsDto
+            {
+               Id = o.Id,
+               Assists = o.Assists,
+               Damage = o.Damage,
+               Deaths = o.Deaths,
+               Kills = o.Kills,
+               PlayerName = o.Player.Name,
+               PlayerId = o.PlayerId,
+               MatchId = o.MatchId,
+               Match = o.Match
+            });
+        }
     }
 }

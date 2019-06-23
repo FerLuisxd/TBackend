@@ -44,6 +44,11 @@ namespace TBackend.Service.implementation
             return statisticsRepository.getStatistic(id);
         }
 
+        public IEnumerable<StatisticsDto> getStatisticsPlayer(int id)
+        {
+            return statisticsRepository.getStatisticsPlayer(id);
+        }
+
         public bool Save(Statistics entity)
         {
             return statisticsRepository.Save(entity);

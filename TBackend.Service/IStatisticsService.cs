@@ -9,6 +9,7 @@ namespace TBackend.Service
     {
         IEnumerable<StatisticsDto> getAllStatistics();
         IEnumerable<StatisticsDto> getAllStatisticsMatchId(int id);
+        IEnumerable<StatisticsDto> getStatisticsPlayer(int id);
         StatisticsDto getStatistic(int id);
     }
 }

@@ -13,6 +13,7 @@ namespace TBackend.Repository
         List<Statistics> FindAllStadistics(int id);
         IEnumerable<StatisticsDto> getAllStatistics();
         IEnumerable<StatisticsDto> getAllStatisticsMatchId(int id);
+        IEnumerable<StatisticsDto> getStatisticsPlayer(int id);
         StatisticsDto getStatistic(int id);
     }
 }

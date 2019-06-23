@@ -4,6 +4,7 @@ using TBackend.Entity;
 using TBackend.Repository.context;
 using TBackend.Repository.dto;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace TBackend.Repository.implementation
 {
@@ -107,7 +108,7 @@ namespace TBackend.Repository.implementation
 
         public IEnumerable<MatchDto> getMatchesTournamentId(int id)
         {
-                   var result = context.Matchs
+        var result = context.Matchs
          .Include(t => t.Tournament)
          .Include(t => t.Team1)
          .Include(t => t.Team2)
@@ -125,7 +126,32 @@ namespace TBackend.Repository.implementation
             WinnerName = o.Winner.Name,
             Team1Name = o.Team1.Name,
             Team2Name = o.Team2.Name,
-            TournamentId = o.TournamentId
+            TournamentId = o.TournamentId,
+            TournamentName = o.Tournament.Name
+        });
+        }
+        public IEnumerable<MatchDto> getMatchesTeamId(int id)
+        {
+        var result = context.Matchs
+         .Include(t => t.Tournament)
+         .Include(t => t.Team1)
+         .Include(t => t.Team2)
+         .Include(t => t.Winner)
+         .Where(t=>t.Team1Id==id||t.Team2Id==id)
+         .ToList();
+
+         return result.Select(o => new MatchDto
+            {
+            Id = o.Id,
+            Fase = o.Fase,
+            Team1Id = o.Team1Id.GetValueOrDefault(),
+            Team2Id = o.Team2Id.GetValueOrDefault(),
+            WinnerId = o.WinnerId.GetValueOrDefault(),
+            WinnerName = o.Winner.Name,
+            Team1Name = o.Team1.Name,
+            Team2Name = o.Team2.Name,
+            TournamentId = o.TournamentId,
+            TournamentName = o.Tournament.Name
         });
         }
 
@@ -138,7 +164,7 @@ namespace TBackend.Repository.implementation
          .Include(t => t.Winner)
          .ToList();
 
-            return result.Select(o => new MatchDto
+           return result.Select(o => new MatchDto
             {
             Id = o.Id,
             Fase = o.Fase,
@@ -148,8 +174,10 @@ namespace TBackend.Repository.implementation
             WinnerName = o.Winner.Name,
             Team1Name = o.Team1.Name,
             Team2Name = o.Team2.Name,
-            TournamentId = o.TournamentId
+            TournamentId = o.TournamentId,
+            TournamentName = o.Tournament.Name
         });
+
         }
 
     public MatchDto getMatch(int id)
@@ -180,6 +208,7 @@ namespace TBackend.Repository.implementation
             result.Team1Name = o.Team1.Name;
             result.Team2Name = o.Team2.Name;
             result.TournamentId = o.TournamentId;
+            result.TournamentName = o.Tournament.Name;
         }
 
         catch (System.Exception)

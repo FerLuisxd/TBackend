@@ -94,5 +94,8 @@ namespace TBackend.Service.implementation
         {
             return matchRepository.Update(entity);
         }
+        public IEnumerable<MatchDto> getMatchesTeamId(int id){
+            return matchRepository.getMatchesTeamId(id);
+        }
     }
 }

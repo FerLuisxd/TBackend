@@ -111,12 +111,12 @@ namespace TBackend.Repository.implementation
             var result = new List<Tournament>();
             try
             {
-                result = context.Tournaments.Where(x => x.PlayerId == id).ToList();
+                result = context.Tournaments.Where(x => x.PlayerId == id)
+                .Where(x=>x.Winner==null).ToList();
             }
 
             catch (System.Exception)
             {
-
                 throw;
             }
             return result;
@@ -134,7 +134,8 @@ namespace TBackend.Repository.implementation
             try
             {
                 result = context.Tournaments.Single(x => x.Id == id);
-                if(result.Winner=="N") can = true;
+                if(result.Winner==null) can = true;
+                if(result.NTeams < 2) can=false;
             }
 
             catch (System.Exception)

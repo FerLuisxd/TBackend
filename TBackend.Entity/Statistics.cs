@@ -12,6 +12,5 @@ namespace TBackend.Entity
         public float Deaths { get; set; }
         public float Assists { get; set; }
         public float Damage { get; set; }
-        
     }
 }
