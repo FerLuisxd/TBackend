@@ -43,20 +43,20 @@ namespace TBackend.Service.implementation
         public int generateMatches(int tournamentId, int fase)
         {
             TournamentDto tournament = this.GetOneTournament(tournamentId);
-            List<Team> teams = tournament.Teams.ToList();
-            // for(int i= 0 ; i <  tournament.Teams.ToList().Count(); i++){
-            //     Team team = new Team();
-            //     team.Id = tournament.Teams.ToList()[i].Id;
-            //     team.Name = tournament.Teams.ToList()[i].Name;
-            //     team.NMembers = tournament.Teams.ToList()[i].NMembers;
-            //     teams.Add(team);
-            // }
+            List<Team> teams = new List<Team>();
+            for(int i= 0 ; i <  tournament.Teams.ToList().Count(); i++){
+                Team team = new Team();
+                team.Id = tournament.Teams.ToList()[i].Id;
+                team.Name = tournament.Teams.ToList()[i].Name;
+                team.NMembers = tournament.Teams.ToList()[i].NMembers;
+                teams.Add(team);
+            }
             switch (tournament.ModeId)
             {
                 case 1:
                     {
                         Console.WriteLine("CASE 1");
-                        return modeService.GenerateMatchesMode1( teams, fase);
+                        return modeService.GenerateMatchesMode1( teams, fase,tournamentId);
                         break;
                     }
                 case 2:
@@ -67,7 +67,7 @@ namespace TBackend.Service.implementation
                 default:
                     {
                         Console.WriteLine("DEFAULT CASE");
-                        return modeService.GenerateMatchesMode1(teams, fase);
+                        return modeService.GenerateMatchesMode1(teams, fase,tournamentId);
                         break;
                     }
             }

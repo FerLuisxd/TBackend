@@ -44,18 +44,18 @@ namespace TBackend.Service.implementation
             return equipos;
 
         }
-        public int GenerateMatchesMode1(List<Team> equipos, int fase)
+        public int GenerateMatchesMode1(List<Team> equipos, int fase, int TournamentId)
         {
             List<Match> matches = new List<Match>();
             // List<Team> teams;
-            if (equipos.Count > 2)
+            if (equipos.Count >= 2)
             {
                 equipos = this.randomTeams(equipos);
             }
-            else
-            {
-                equipos = new List<Team>();
-            }
+            // else
+            // {
+            //     equipos = new List<Team>();
+            // }
             //List<Match> matches //
             //Console.WriteLine("");
             Match match = new Match();
@@ -68,7 +68,7 @@ namespace TBackend.Service.implementation
                 match.Team1 = equipos[index];
                 match.Team2 = equipos[index2];
                 match.Team2Id = equipos[index2].Id;
-                match.TournamentId = equipos[index].TournamentId.GetValueOrDefault();
+                match.TournamentId = TournamentId;
                 matches.Add(match);
                 //}
             }
@@ -95,18 +95,22 @@ namespace TBackend.Service.implementation
                         matches[i].WinnerId = matches[i].Team2.Id;
                     }
                     matches[i].Fase = fase;
-                    matchRepository.Save(matches[i]);
+                    matchRepository.Save(matches[i]); // MAL !!
+                    Console.WriteLine("Guardo!");
+                    Console.WriteLine(i);
 
                 }
                 matchRepository.GenerateMatches1(matches);
 
             }
             fase++;
+            Console.WriteLine("WIN TEAM!");
+            Console.WriteLine(winteam.Count);
             if (winteam.Count == 1)
             {
                 return winteam[0].Id;
             }
-            else { GenerateMatchesMode1(winteam, fase); }
+            else { GenerateMatchesMode1(winteam, fase,TournamentId); }
             return 0;
         }
 
