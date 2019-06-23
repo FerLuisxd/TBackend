@@ -15,13 +15,14 @@ namespace TBackend.Service.implementation
         private IMatchService matchService;
         private IStatisticsService statdisticsService;
         private IPlayerService playerService;
-        public TournamentService(ITournamentRepository tournamentRepository)
-        //  IModeService modeService, IMatchService matchService,
+        public TournamentService(ITournamentRepository tournamentRepository,
+        IModeService modeService)//, IMatchService matchService)
         // IStatisticsService statdisticsService,
         // IPlayerService playerService)
         // 
         {
             this.tournamentRepository = tournamentRepository;
+            this.modeService= modeService;
             // this.matchService = matchService;
 
             // this.modeService = modeService;
@@ -42,23 +43,31 @@ namespace TBackend.Service.implementation
         public int generateMatches(int tournamentId, int fase)
         {
             TournamentDto tournament = this.GetOneTournament(tournamentId);
+            List<Team> teams = tournament.Teams.ToList();
+            // for(int i= 0 ; i <  tournament.Teams.ToList().Count(); i++){
+            //     Team team = new Team();
+            //     team.Id = tournament.Teams.ToList()[i].Id;
+            //     team.Name = tournament.Teams.ToList()[i].Name;
+            //     team.NMembers = tournament.Teams.ToList()[i].NMembers;
+            //     teams.Add(team);
+            // }
             switch (tournament.ModeId)
             {
                 case 1:
                     {
                         Console.WriteLine("CASE 1");
-                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(), fase);
+                        return modeService.GenerateMatchesMode1( teams, fase);
                         break;
                     }
                 case 2:
                     {
-                        return modeService.GenerateMatchesMode2(tournament.Teams.ToList(), fase);
+                        return modeService.GenerateMatchesMode2(teams, fase);
                         break;
                     }
                 default:
                     {
                         Console.WriteLine("DEFAULT CASE");
-                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(), fase);
+                        return modeService.GenerateMatchesMode1(teams, fase);
                         break;
                     }
             }

@@ -9,13 +9,13 @@ namespace TBackend.Service.implementation
     {
 
         private IMatchRepository matchRepository;
-        private IPlayerService playerService;
-        private IStatisticsService statdisticsService;
-        public MatchService(IMatchRepository matchRepository,IPlayerService playerService, IStatisticsService statdisticsService)
+        private IPlayerRepository playerRepository;
+        private IStatisticsRepository statdisticsRepository;
+        public MatchService(IMatchRepository matchRepository,IPlayerRepository playerRepository, IStatisticsRepository statdisticsRepository)
         {
-            this.playerService=playerService;
+            this.playerRepository=playerRepository;
             this.matchRepository=matchRepository;
-            this.statdisticsService= statdisticsService;
+            this.statdisticsRepository= statdisticsRepository;
         }
         
         public bool Delete(int id)
@@ -29,7 +29,7 @@ namespace TBackend.Service.implementation
                 {
 
                     var random = new Random();
-                    var team1Count = playerService.getPlayersFromTeamId(matches[i].Team1.Id);
+                    var team1Count = playerRepository.getPlayersFromTeamId(matches[i].Team1.Id);
                     for (int j = 0; j < team1Count.Count; j++)
                     {
                         Statistics statistics = new Statistics();
@@ -39,9 +39,9 @@ namespace TBackend.Service.implementation
                         statistics.Deaths = random.Next(2, 15);
                         statistics.Assists = random.Next(10, 40);
                         statistics.Damage = random.Next(5000, 13000);
-                        statdisticsService.Save(statistics);
+                        statdisticsRepository.Save(statistics);
                     } // numero de jugadores
-                    var team2Count = playerService.getPlayersFromTeamId(matches[i].Team2.Id);
+                    var team2Count = playerRepository.getPlayersFromTeamId(matches[i].Team2.Id);
                     for (int j = 0; j < team2Count.Count; j++)
                     {
                         Statistics statistics = new Statistics();
@@ -51,7 +51,7 @@ namespace TBackend.Service.implementation
                         statistics.Deaths = random.Next(2, 15);
                         statistics.Assists = random.Next(10, 40);
                         statistics.Damage = random.Next(5000, 13000);
-                        statdisticsService.Save(statistics);
+                        statdisticsRepository.Save(statistics);
                     } // numero de jugadores
                 }
                 return 0;

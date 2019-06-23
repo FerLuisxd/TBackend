@@ -8,12 +8,12 @@ namespace TBackend.Service.implementation
     {
 
         private IPlayerRepository playerRepository;
-        private ITeamService teamService;
+        private ITeamRepository teamRepository;
 
-        public PlayerService(IPlayerRepository playerRepository, ITeamService teamService)
+        public PlayerService(IPlayerRepository playerRepository, ITeamRepository teamRepository)
         {
             this.playerRepository = playerRepository;
-            this.teamService = teamService;
+            this.teamRepository = teamRepository;
         }
 
         public bool Delete(int id)
@@ -40,27 +40,31 @@ namespace TBackend.Service.implementation
         {
             if (entity.TeamId != null)
             {
-                Team team = teamService.Get(entity.TeamId.GetValueOrDefault());
-                team.NMembers = team.NMembers + 1;
-                teamService.Update(team);
+               
+                    Team team = teamRepository.Get(entity.TeamId.GetValueOrDefault());
+                    team.NMembers = team.NMembers + 1;
+                    teamRepository.Update(team);
+                //    }
             }
             return playerRepository.Save(entity);
         }
 
         public bool Update(Player entity)
         {
-            Team old = teamService.Get(entity.Id);
-            if (old.TournamentId != null)
+            
+            Player old = this.Get(entity.Id);
+            if (old.TeamId != null)
             {
-                Team team = teamService.Get(entity.TeamId.GetValueOrDefault());
+                Team team = teamRepository.Get(old.TeamId.GetValueOrDefault());
                 team.NMembers = team.NMembers - 1;
-                teamService.Update(team);
+                teamRepository.Update(team);
+                
             }
             if (entity.TeamId != null)
             {
-                Team team = teamService.Get(entity.TeamId.GetValueOrDefault());
+                Team team = teamRepository.Get(entity.TeamId.GetValueOrDefault());
                 team.NMembers = team.NMembers + 1;
-                teamService.Update(team);
+                teamRepository.Update(team);
             }
             return playerRepository.Update(entity);
         }

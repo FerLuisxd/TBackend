@@ -8,11 +8,11 @@ namespace TBackend.Service.implementation
     {
 
         private IModeRepository modeRepository;
-        private IMatchService matchService;
-        public ModeService(IModeRepository modeRepository, IMatchService matchService)
+        private IMatchService matchRepository;
+        public ModeService(IModeRepository modeRepository, IMatchService matchRepository) //Temporal debe ser Repository
         {
             this.modeRepository = modeRepository;
-            this.matchService = matchService;
+            this.matchRepository = matchRepository;
         }
 
         public bool Delete(int id)
@@ -95,10 +95,10 @@ namespace TBackend.Service.implementation
                         matches[i].WinnerId = matches[i].Team2.Id;
                     }
                     matches[i].Fase = fase;
-                    matchService.Save(matches[i]);
+                    matchRepository.Save(matches[i]);
 
                 }
-                matchService.GenerateMatches1(matches);
+                matchRepository.GenerateMatches1(matches);
 
             }
             fase++;
