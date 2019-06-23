@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TBackend.Entity;
 using TBackend.Repository;
@@ -8,14 +9,52 @@ namespace TBackend.Service.implementation
     {
 
         private IMatchRepository matchRepository;
-        public MatchService(IMatchRepository matchRepository)
+        private IPlayerService playerService;
+        private IStatisticsService statdisticsService;
+        public MatchService(IMatchRepository matchRepository,IPlayerService playerService, IStatisticsService statdisticsService)
         {
+            this.playerService=playerService;
             this.matchRepository=matchRepository;
+            this.statdisticsService= statdisticsService;
         }
         
         public bool Delete(int id)
         {
             return matchRepository.Delete(id);
+        }
+
+        public int GenerateMatches1(List<Match> matches)
+        {
+                for (int i = 0; i < matches.Count; i++)
+                {
+
+                    var random = new Random();
+                    var team1Count = playerService.getPlayersFromTeamId(matches[i].Team1.Id);
+                    for (int j = 0; j < team1Count.Count; j++)
+                    {
+                        Statistics statistics = new Statistics();
+                        statistics.MatchId = matches[i].Id;
+                        statistics.PlayerId = team1Count[j].Id;
+                        statistics.Assists = random.Next(10, 40);
+                        statistics.Deaths = random.Next(2, 15);
+                        statistics.Assists = random.Next(10, 40);
+                        statistics.Damage = random.Next(5000, 13000);
+                        statdisticsService.Save(statistics);
+                    } // numero de jugadores
+                    var team2Count = playerService.getPlayersFromTeamId(matches[i].Team2.Id);
+                    for (int j = 0; j < team2Count.Count; j++)
+                    {
+                        Statistics statistics = new Statistics();
+                        statistics.MatchId = matches[i].Id;
+                        statistics.PlayerId = team2Count[j].Id;
+                        statistics.Assists = random.Next(10, 40);
+                        statistics.Deaths = random.Next(2, 15);
+                        statistics.Assists = random.Next(10, 40);
+                        statistics.Damage = random.Next(5000, 13000);
+                        statdisticsService.Save(statistics);
+                    } // numero de jugadores
+                }
+                return 0;
         }
 
         public Match Get(int id)

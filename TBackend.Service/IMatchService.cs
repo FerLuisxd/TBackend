@@ -6,6 +6,6 @@ namespace TBackend.Service
 
     public interface IMatchService : IService<Match>
     {
-  
+        int GenerateMatches1(List<Match> Match);
     }
 }

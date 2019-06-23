@@ -45,30 +45,38 @@ namespace TBackend.Service.implementation
             {
                 case 1:
                     {
-                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList());
+                        Console.WriteLine("CASE 1");
+                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(),fase);
                         break;
                     }
                 case 2:
                     {
-                        return modeService.GenerateMatchesMode2(tournament.Teams.ToList());
+                        return modeService.GenerateMatchesMode2(tournament.Teams.ToList(),fase);
                         break;
                     }
                 default:
                     {
-                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList());
+                        Console.WriteLine("DEFAULT CASE");
+                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(),fase);
                         break;
                     }
             }
         }
-        public void Handler(int tournamentId)//Solo tournamentId
+        public bool Handler(int tournamentId)//Solo tournamentId
         {
             int winner;
             if(this.CanGenerate(tournamentId)){
-            winner = this.generateMatches(tournamentId, 1);
+            Console.WriteLine("PASE CAN GENERATE");
+            winner = this.generateMatches(tournamentId, 1);//ESTA ACA
+            Console.WriteLine("PASE GenerateMatches");
+            Console.WriteLine(winner);
             Tournament aux = this.Get(tournamentId);
-            aux.WinnerId = winner;
+            aux.Winner = winner.ToString();
             this.Update(aux);
+            return true;
             }
+            return false;
+
         }
 
         public Tournament Get(int id)

@@ -12460,23 +12460,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\roloz\\.nuget\\packages\\": {},
+    "C:\\Users\\ferlu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
       "projectName": "TBackend.Api",
-      "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
-      "packagesPath": "C:\\Users\\roloz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Api\\obj\\",
+      "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Api\\TBackend.Api.csproj",
+      "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\roloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12489,11 +12489,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
-              "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
+            "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+              "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
             },
-            "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {
-              "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\TBackend.Service.csproj"
+            "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {
+              "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TBackend\\TBackend.Service\\TBackend.Service.csproj"
             }
           }
         }
