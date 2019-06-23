@@ -106,12 +106,8 @@ namespace TBackend.Service.implementation
             fase++;
             Console.WriteLine("WIN TEAM!");
             Console.WriteLine(winteam.Count);
-            if (winteam.Count == 1)
-            {
-                return winteam[0].Id;
-            }
-            else { GenerateMatchesMode1(winteam, fase,TournamentId); }
-            return 0;
+            if(winteam.Count >1) { GenerateMatchesMode1(winteam, fase,TournamentId); }
+            return winteam[0].Id;
         }
 
         public Team TrueResults(List<Team> equipos)

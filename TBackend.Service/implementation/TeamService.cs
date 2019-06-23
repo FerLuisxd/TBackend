@@ -9,11 +9,11 @@ namespace TBackend.Service.implementation
     {
 
         private ITeamRepository teamRepository;
-        private ITournamentService tournamentService;
-        public TeamService(ITeamRepository teamRepository, ITournamentService tournamentService)
+        private ITournamentRepository tournamentRepository;
+        public TeamService(ITeamRepository teamRepository, ITournamentRepository tournamentRepository)
         {
             this.teamRepository=teamRepository;
-            this.tournamentService= tournamentService;
+            this.tournamentRepository= tournamentRepository;
             //this.tournamentService = HttpContext.RequestServices.GetService(typeof(ISomeService));
         }
         
@@ -36,9 +36,9 @@ namespace TBackend.Service.implementation
         {
             if (entity.TournamentId != null)
             {
-                Tournament tournament = tournamentService.Get(entity.TournamentId.GetValueOrDefault());
+                Tournament tournament = tournamentRepository.Get(entity.TournamentId.GetValueOrDefault());
                 tournament.NTeams = tournament.NTeams+1;
-                tournamentService.Update(tournament);
+                tournamentRepository.Update(tournament);
             }
             return teamRepository.Save(entity);
         }
@@ -47,15 +47,15 @@ namespace TBackend.Service.implementation
         {
             Team old = teamRepository.Get(entity.Id);
             if(old.TournamentId != null){
-                Tournament tournament = tournamentService.Get(entity.TournamentId.GetValueOrDefault());
+                Tournament tournament = tournamentRepository.Get(entity.TournamentId.GetValueOrDefault());
                 tournament.NTeams = tournament.NTeams-1;
-                tournamentService.Update(tournament);
+                tournamentRepository.Update(tournament);
             }
             if (entity.TournamentId != null)
             {
-                Tournament tournament = tournamentService.Get(entity.TournamentId.GetValueOrDefault());
+                Tournament tournament = tournamentRepository.Get(entity.TournamentId.GetValueOrDefault());
                 tournament.NTeams = tournament.NTeams+1;
-                tournamentService.Update(tournament);
+                tournamentRepository.Update(tournament);
             }
             return teamRepository.Update(entity);
         }

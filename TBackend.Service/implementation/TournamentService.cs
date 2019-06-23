@@ -42,7 +42,7 @@ namespace TBackend.Service.implementation
 
         public int generateMatches(int tournamentId, int fase)
         {
-            TournamentDto tournament = this.GetOneTournament(tournamentId);
+            var tournament = this.GetOneTournament(tournamentId);
             List<Team> teams = new List<Team>();
             for(int i= 0 ; i <  tournament.Teams.ToList().Count(); i++){
                 Team team = new Team();
@@ -57,18 +57,15 @@ namespace TBackend.Service.implementation
                     {
                         Console.WriteLine("CASE 1");
                         return modeService.GenerateMatchesMode1( teams, fase,tournamentId);
-                        break;
                     }
                 case 2:
                     {
                         return modeService.GenerateMatchesMode2(teams, fase);
-                        break;
                     }
                 default:
                     {
                         Console.WriteLine("DEFAULT CASE");
                         return modeService.GenerateMatchesMode1(teams, fase,tournamentId);
-                        break;
                     }
             }
         }
@@ -80,9 +77,11 @@ namespace TBackend.Service.implementation
                 Console.WriteLine("PASE CAN GENERATE");
                 winner = this.generateMatches(tournamentId, 1);//ESTA ACA
                 Console.WriteLine("PASE GenerateMatches");
-                Console.WriteLine(winner);
+                Console.WriteLine(winner);  
                 Tournament aux = this.Get(tournamentId);
                 aux.Winner = winner.ToString();
+                Console.WriteLine("WINNER");
+                Console.WriteLine(winner.ToString());
                 this.Update(aux);
                 return true;
             }
