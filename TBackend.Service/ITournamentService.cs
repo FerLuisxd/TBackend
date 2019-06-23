@@ -12,7 +12,7 @@ namespace TBackend.Service
     IEnumerable<TournamentDto> GetAllTournaments();
     TournamentDto GetOneTournament(int id);
 
-    int generateMatches(int tournamentId, int fase);
+    string generateMatches(int tournamentId, int fase);
 
     }  
 }

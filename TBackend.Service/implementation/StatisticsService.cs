@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TBackend.Entity;
 using TBackend.Repository;
+using TBackend.Repository.dto;
 
 namespace TBackend.Service.implementation
 {
@@ -26,6 +27,21 @@ namespace TBackend.Service.implementation
         public IEnumerable<Statistics> GetAll()
         {
            return statisticsRepository.GetAll();
+        }
+
+        public IEnumerable<StatisticsDto> getAllStatistics()
+        {
+            return statisticsRepository.getAllStatistics();
+        }
+
+        public IEnumerable<StatisticsDto> getAllStatisticsMatchId(int id)
+        {
+            return statisticsRepository.getAllStatisticsMatchId(id);
+        }
+
+        public StatisticsDto getStatistic(int id)
+        {
+            return statisticsRepository.getStatistic(id);
         }
 
         public bool Save(Statistics entity)

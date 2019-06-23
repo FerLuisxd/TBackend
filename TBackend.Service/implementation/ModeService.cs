@@ -43,7 +43,7 @@ namespace TBackend.Service.implementation
             }//REORDENA LA LISTA DE EQUIPOS DE MANERA ALEATORIA
             return equipos;
         }
-        public int GenerateMatchesMode1(List<Team> equipos, int fase, int TournamentId)
+        public string GenerateMatchesMode1(List<Team> equipos, int fase, int TournamentId)
         {
             List<Match> matches = new List<Match>();
             // List<Team> teams;
@@ -106,7 +106,7 @@ namespace TBackend.Service.implementation
             Console.WriteLine("WIN TEAM!");
             Console.WriteLine(winteam.Count);
             if(winteam.Count >1) { GenerateMatchesMode1(winteam, fase,TournamentId); }
-            return winteam[0].Id;
+            return winteam[0].Name;
         }
 
         public Team TrueResults(List<Team> equipos)

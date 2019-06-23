@@ -20,17 +20,23 @@ namespace TBackend.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                statisticsService.GetAll()
+                statisticsService.getAllStatistics()
             );
         }
          [HttpGet("{id}")]
         public ActionResult GetId(int id)
         {
             return Ok(
-                statisticsService.Get(id)
+                statisticsService.getStatistic(id)
             );
         }
-
+        [HttpGet("tournament/{id}")]
+        public ActionResult getStatistic(int id)
+        {
+            return Ok(
+                statisticsService.getAllStatisticsMatchId(id)
+            );
+        }
         [HttpPost]
         public ActionResult Post([FromBody] Statistics statistics)
         {

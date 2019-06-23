@@ -31,7 +31,7 @@ namespace TBackend.Service.implementation
             return tournamentRepository.Delete(id);
         }
 
-        public int generateMatches(int tournamentId, int fase)
+        public string generateMatches(int tournamentId, int fase)
         {
             var tournament = this.GetOneTournament(tournamentId);
             List<Team> teams = new List<Team>();
@@ -51,7 +51,8 @@ namespace TBackend.Service.implementation
                     }
                 case 2:
                     {
-                        return modeService.GenerateMatchesMode2(teams, fase);
+                        return "";
+                        //return modeService.GenerateMatchesMode2(teams, fase);
                     }
                 default:
                     {
@@ -62,7 +63,7 @@ namespace TBackend.Service.implementation
         }
         public bool Handler(int tournamentId)//Solo tournamentId
         {
-            int winner;
+            string winner;
             if (this.CanGenerate(tournamentId))
             {
                 Console.WriteLine("PASE CAN GENERATE");
