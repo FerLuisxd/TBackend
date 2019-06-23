@@ -32,7 +32,7 @@ namespace TBackend.Service.implementation
             {
                 do
                 {
-                    number = random.Next(m);
+                number = random.Next(m);
                 } while (randomNumbers.Contains(number));
                 n--;
                 randomNumbers.Add(number);
@@ -42,7 +42,6 @@ namespace TBackend.Service.implementation
                 equipos[n] = value;
             }//REORDENA LA LISTA DE EQUIPOS DE MANERA ALEATORIA
             return equipos;
-
         }
         public int GenerateMatchesMode1(List<Team> equipos, int fase, int TournamentId)
         {

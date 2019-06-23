@@ -20,14 +20,22 @@ namespace TBackend.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                matchService.GetAll()
+                matchService.getAllMaches()
             );
         }
          [HttpGet("{id}")]
         public ActionResult GetId(int id)
         {
             return Ok(
-                matchService.Get(id)
+                matchService.getOneMatch(id)
+            );
+        }
+
+        [HttpGet("tournament/{id}")]
+        public ActionResult getTournamentMatch(int id)
+        {
+            return Ok(
+                matchService.getMatchesTournamentId(id)
             );
         }
 

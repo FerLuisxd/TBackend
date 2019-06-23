@@ -16,25 +16,16 @@ namespace TBackend.Service.implementation
         private IStatisticsService statdisticsService;
         private IPlayerService playerService;
         public TournamentService(ITournamentRepository tournamentRepository,
-        IModeService modeService)//, IMatchService matchService)
-        // IStatisticsService statdisticsService,
-        // IPlayerService playerService)
-        // 
+        IModeService modeService)
         {
             this.tournamentRepository = tournamentRepository;
             this.modeService= modeService;
-            // this.matchService = matchService;
-
-            // this.modeService = modeService;
-            // this.statdisticsService = statdisticsService;
-            // this.playerService = playerService;
         }
 
         public bool CanGenerate(int tournamentId)
         {
             return tournamentRepository.CanGenerate(tournamentId);
         }
-
         public bool Delete(int id)
         {
             return tournamentRepository.Delete(id);
@@ -86,7 +77,6 @@ namespace TBackend.Service.implementation
                 return true;
             }
             return false;
-
         }
 
         public Tournament Get(int id)
@@ -106,7 +96,7 @@ namespace TBackend.Service.implementation
 
         public bool Save(Tournament entity)
         {
-            if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)
+            if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)//YA TIENE TORNEO
                 return tournamentRepository.Save(entity);
             else return false;
         }
@@ -114,16 +104,16 @@ namespace TBackend.Service.implementation
         public bool Update(Tournament entity)
         {
             var old = this.Get(entity.Id);
-            if (old.PlayerId != entity.PlayerId){
+            if (old.PlayerId != entity.PlayerId){//PLAYER ANTIGUO 
                 Console.WriteLine("DIFERNTE");
-                if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)
-                    if (entity.Date > DateTime.Now.AddDays(-1))
+                if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)//SI TIENE TORNEO
+                    if (entity.Date > DateTime.Now.AddDays(-1))//))//24 HORAS ANTES MAXIMO PARA EDITAR
                         return tournamentRepository.Update(entity);
                     else return false;
                 else return false;}
-            else if (old.PlayerId == entity.PlayerId){
+            else if (old.PlayerId == entity.PlayerId){//MISMO PLAYER ID
                 Console.WriteLine("IGUAL");
-                if (entity.Date > DateTime.Now.AddDays(-1))
+                if (entity.Date > DateTime.Now.AddDays(-1))//24 HORAS ANTES MAXIMO PARA EDITAR
                     return tournamentRepository.Update(entity);
                 else return false;}
             else return false;

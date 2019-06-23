@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TBackend.Entity;
 using TBackend.Repository;
+using TBackend.Repository.dto;
 
 namespace TBackend.Service.implementation
 {
@@ -67,6 +68,21 @@ namespace TBackend.Service.implementation
         public IEnumerable<Match> GetAll()
         {
            return matchRepository.GetAll();
+        }
+
+        public IEnumerable<MatchDto> getAllMaches()
+        {
+            return matchRepository.getMatches();
+        }
+
+        public IEnumerable<MatchDto> getMatchesTournamentId(int id)
+        {
+            return matchRepository.getMatchesTournamentId(id);
+        }
+
+        public MatchDto getOneMatch(int id)
+        {
+            return matchRepository.getMatch(id);
         }
 
         public bool Save(Match entity)
