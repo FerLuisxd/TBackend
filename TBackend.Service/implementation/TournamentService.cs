@@ -23,7 +23,7 @@ namespace TBackend.Service.implementation
         {
             this.tournamentRepository = tournamentRepository;
             // this.matchService = matchService;
-            
+
             // this.modeService = modeService;
             // this.statdisticsService = statdisticsService;
             // this.playerService = playerService;
@@ -38,26 +38,27 @@ namespace TBackend.Service.implementation
         {
             return tournamentRepository.Delete(id);
         }
-        
-        public int generateMatches(int tournamentId, int fase){
+
+        public int generateMatches(int tournamentId, int fase)
+        {
             TournamentDto tournament = this.GetOneTournament(tournamentId);
             switch (tournament.ModeId)
             {
                 case 1:
                     {
                         Console.WriteLine("CASE 1");
-                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(),fase);
+                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(), fase);
                         break;
                     }
                 case 2:
                     {
-                        return modeService.GenerateMatchesMode2(tournament.Teams.ToList(),fase);
+                        return modeService.GenerateMatchesMode2(tournament.Teams.ToList(), fase);
                         break;
                     }
                 default:
                     {
                         Console.WriteLine("DEFAULT CASE");
-                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(),fase);
+                        return modeService.GenerateMatchesMode1(tournament.Teams.ToList(), fase);
                         break;
                     }
             }
@@ -65,15 +66,16 @@ namespace TBackend.Service.implementation
         public bool Handler(int tournamentId)//Solo tournamentId
         {
             int winner;
-            if(this.CanGenerate(tournamentId)){
-            Console.WriteLine("PASE CAN GENERATE");
-            winner = this.generateMatches(tournamentId, 1);//ESTA ACA
-            Console.WriteLine("PASE GenerateMatches");
-            Console.WriteLine(winner);
-            Tournament aux = this.Get(tournamentId);
-            aux.Winner = winner.ToString();
-            this.Update(aux);
-            return true;
+            if (this.CanGenerate(tournamentId))
+            {
+                Console.WriteLine("PASE CAN GENERATE");
+                winner = this.generateMatches(tournamentId, 1);//ESTA ACA
+                Console.WriteLine("PASE GenerateMatches");
+                Console.WriteLine(winner);
+                Tournament aux = this.Get(tournamentId);
+                aux.Winner = winner.ToString();
+                this.Update(aux);
+                return true;
             }
             return false;
 
@@ -103,10 +105,19 @@ namespace TBackend.Service.implementation
 
         public bool Update(Tournament entity)
         {
-            if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)
-                if (entity.Date < DateTime.Now.AddDays(-1))
+            var old = this.Get(entity.Id);
+            if (old.PlayerId != entity.PlayerId){
+                Console.WriteLine("DIFERNTE");
+                if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)
+                    if (entity.Date > DateTime.Now.AddDays(-1))
+                        return tournamentRepository.Update(entity);
+                    else return false;
+                else return false;}
+            else if (old.PlayerId == entity.PlayerId){
+                Console.WriteLine("IGUAL");
+                if (entity.Date > DateTime.Now.AddDays(-1))
                     return tournamentRepository.Update(entity);
-                else return false;
+                else return false;}
             else return false;
         }
 
