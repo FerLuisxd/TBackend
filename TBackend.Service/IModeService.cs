@@ -6,6 +6,10 @@ namespace TBackend.Service
 
     public interface IModeService : IService<Mode>
     {
-        List<Match> GenerateMatchesMode1(List<Team> equipos);
+        int GenerateMatchesMode1(List<Team> equipos, int fase);
+
+        int GenerateMatchesMode2(List<Team> equipos, int fase);
+
+        Team TrueResults(List<Team> equipos);
     }
 }

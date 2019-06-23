@@ -23,7 +23,7 @@ namespace TBackend.Api.Controllers
                 tournamentService.GetAllTournaments()
             );
         }
-         [HttpGet("{id}")]
+        [HttpGet("{id}")]
         public ActionResult GetId(int id)
         {
             return Ok(
@@ -44,6 +44,14 @@ namespace TBackend.Api.Controllers
         {
             return Ok(
                 tournamentService.Update(tournament)
+            );
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult Handler(int id)
+        {
+            return Ok(
+                tournamentService.Handler(id)
             );
         }
 

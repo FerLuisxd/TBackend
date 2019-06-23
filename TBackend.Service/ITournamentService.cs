@@ -7,10 +7,12 @@ namespace TBackend.Service
 
     public interface ITournamentService : IService<Tournament>
     {
-    Team TrueResults(List<Team> equipos);
-    void Fase(List<Team> teams, Tournament Tournament, int fase);
+    void Handler(int tournamentId);
     bool CanGenerate(int tournamentId);
     IEnumerable<TournamentDto> GetAllTournaments();
     TournamentDto GetOneTournament(int id);
-    }
+
+    int generateMatches(int tournamentId, int fase);
+
+    }  
 }

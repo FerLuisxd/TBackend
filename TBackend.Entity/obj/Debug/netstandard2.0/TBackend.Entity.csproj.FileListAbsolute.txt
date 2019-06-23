@@ -34,3 +34,12 @@ C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Entity\obj\Debug\
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.deps.json
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csprojAssemblyReference.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csproj.CoreCompileInputs.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfoInputs.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb

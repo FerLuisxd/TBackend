@@ -82,3 +82,24 @@ C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Api\obj\Debug\net
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csproj.CopyComplete
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.dll
 C:\Users\ferlu\Documents\Web\TrabajoFinalWeb\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.deps.json
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.runtimeconfig.json
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.runtimeconfig.dev.json
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Entity.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Repository.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Service.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Entity.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Service.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Repository.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csprojAssemblyReference.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csproj.CoreCompileInputs.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.RazorAssemblyInfo.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.RazorAssemblyInfo.cs
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.AssemblyInfoInputs.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.AssemblyInfo.cs
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.RazorTargetAssemblyInfo.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csproj.CopyComplete
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.pdb

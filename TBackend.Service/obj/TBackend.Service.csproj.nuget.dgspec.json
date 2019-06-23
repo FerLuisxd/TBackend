@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {}
+    "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+    "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
         "projectName": "TBackend.Entity",
-        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
-        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\obj\\",
+        "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "packagesPath": "C:\\Users\\roloz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,20 +56,20 @@
         }
       }
     },
-    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {
+    "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
         "projectName": "TBackend.Repository",
-        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
-        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Repository\\obj\\",
+        "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "packagesPath": "C:\\Users\\roloz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
-                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
+              "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
               }
             }
           }
@@ -120,20 +120,20 @@
         }
       }
     },
-    "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {
+    "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\TBackend.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\TBackend.Service.csproj",
+        "projectUniqueName": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\TBackend.Service.csproj",
         "projectName": "TBackend.Service",
-        "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\TBackend.Service.csproj",
-        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Service\\obj\\",
+        "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\TBackend.Service.csproj",
+        "packagesPath": "C:\\Users\\roloz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roloz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,11 +146,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
-                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
+              "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
               },
-              "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {
-                "projectPath": "C:\\Users\\ferlu\\Documents\\Web\\TrabajoFinalWeb\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj"
+              "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {
+                "projectPath": "C:\\Users\\roloz\\OneDrive\\Desktop\\Aplicaciones Web\\TFinal\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj"
               }
             }
           }
