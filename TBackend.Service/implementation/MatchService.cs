@@ -37,6 +37,7 @@ namespace TBackend.Service.implementation
                         statistics.PlayerId = team1Count[j].Id;
                         statistics.Assists = random.Next(10, 40);
                         statistics.Deaths = random.Next(2, 15);
+                        statistics.Kills= random.Next(0,30);
                         statistics.Assists = random.Next(10, 40);
                         statistics.Damage = random.Next(5000, 13000);
                         statdisticsRepository.Save(statistics);
@@ -49,6 +50,7 @@ namespace TBackend.Service.implementation
                         statistics.PlayerId = team2Count[j].Id;
                         statistics.Assists = random.Next(10, 40);
                         statistics.Deaths = random.Next(2, 15);
+                        statistics.Kills= random.Next(0,30);
                         statistics.Assists = random.Next(10, 40);
                         statistics.Damage = random.Next(5000, 13000);
                         statdisticsRepository.Save(statistics);
