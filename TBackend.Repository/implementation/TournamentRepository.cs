@@ -134,8 +134,11 @@ namespace TBackend.Repository.implementation
             try
             {
                 result = context.Tournaments.Single(x => x.Id == id);
-                if(result.Winner==null||result.Winner==string.Empty) can = true;
-                if(result.NTeams < 2) can=false;
+                Console.WriteLine("hola");
+                Console.WriteLine(result.Winner) ;
+                if(result.Winner==null||result.Winner==string.Empty)can = true;
+                if(result.NTeams % 4 != 0 && result.NTeams < 2) can=false;
+                Console.WriteLine(result.NTeams);
             }
 
             catch (System.Exception)

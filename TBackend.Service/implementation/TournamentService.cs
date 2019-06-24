@@ -52,7 +52,7 @@ namespace TBackend.Service.implementation
                 case 2:
                     {
                         return "";
-                        //return modeService.GenerateMatchesMode2(teams, fase);
+                        return modeService.GenerateMatchesMode2(teams, fase,tournamentId);
                     }
                 default:
                     {
@@ -61,6 +61,7 @@ namespace TBackend.Service.implementation
                     }
             }
         }
+        
         public bool Handler(int tournamentId)//Solo tournamentId
         {
             string winner;

@@ -9,7 +9,7 @@ namespace TBackend.Service
     {
         string GenerateMatchesMode1(List<Team> equipos, int fase,int TournamentId);
 
-        int GenerateMatchesMode2(List<Team> equipos, int fase);
+        string GenerateMatchesMode2(List<Team> equipos, int fase,int TournamentId);
 
         Team TrueResults(List<Team> equipos);
     }

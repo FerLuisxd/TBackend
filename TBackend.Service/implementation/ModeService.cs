@@ -117,10 +117,88 @@ namespace TBackend.Service.implementation
             return winner;
         }
 
-        public int GenerateMatchesMode2(List<Team> equipos)
+public string GenerateMatchesMode2(List<Team> equipos, int fase, int TournamentId) 
         {
-            return 0;
+            List<Match> matches = new List<Match>();
 
+            if (equipos.Count>=2)
+            {
+                equipos = this.randomTeams(equipos);
+            }
+
+            Match match = new Match();
+
+            for (int i = 0; i < equipos.Count; i ++)
+            {
+                for (int j = i+1; j < equipos.Count; j ++)
+                {
+                    if (j < equipos.Count)
+                    {
+                        match = new Match();
+                        match.Team1Id = equipos[i].Id;
+                        match.Team1 = equipos[i];
+                        match.Team2Id = equipos[j].Id;
+                        match.Team2 = equipos[j];
+                        match.TournamentId = TournamentId;
+                        match.Fase = fase;
+
+                        matches.Add(match);
+                    }
+                }
+            }
+            List<int> points = new List<int>();
+            for (int i = 0; i < equipos.Count; i++)
+            {
+                int x = new int();
+                x = 0;
+                points.Add(x);
+            }
+            Team winner;
+            int iwinner = 0;
+            List<Team> aux;
+            List<Team> winteam = new List<Team>();
+
+            for (int i = 0; i < matches.Count; i++)
+            {
+                aux = new List<Team> { matches[i].Team1, matches[i].Team2 };
+                winner = this.TrueResults(aux);
+                winteam.Add(winner);
+                if (winner.Id == matches[i].Team1.Id)
+                {
+                    matches[i].WinnerId = matches[i].Team1.Id;
+                }
+                else
+                {
+                    matches[i].WinnerId = matches[i].Team2.Id;
+                }
+                matchRepository.Save(matches[i]);
+                Console.WriteLine("GuardoModo2!");
+                Console.WriteLine(i);
+            }
+            matchRepository.GenerateMatches1(matches);
+            //Verificando el ganador
+            for (int i = 0; i < equipos.Count; i++)
+            {
+                for (int j = 0; j < winteam.Count; j++)
+                {
+                    if (equipos[i] == winteam[j])
+                    {
+                        points[i]++;
+                    }
+                }
+            }
+
+            int mayor = 0;
+            for (int i = 0; i < points.Count; i++)
+            {
+                if (points[i]>mayor)
+                {
+                    mayor=points[i];
+                    iwinner = i;
+                    Console.WriteLine(iwinner);
+                }
+            }
+            return equipos[iwinner].Name;
         }
 
         public Mode Get(int id)
