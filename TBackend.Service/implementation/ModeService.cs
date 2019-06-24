@@ -117,7 +117,7 @@ namespace TBackend.Service.implementation
             return winner;
         }
 
-public string GenerateMatchesMode2(List<Team> equipos, int fase, int TournamentId) 
+        public string GenerateMatchesMode2(List<Team> equipos, int fase, int TournamentId) 
         {
             List<Match> matches = new List<Match>();
 
