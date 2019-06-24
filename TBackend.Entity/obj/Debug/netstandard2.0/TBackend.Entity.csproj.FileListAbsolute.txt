@@ -52,3 +52,12 @@ C:\Users\ferlu\Documents\Web\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\T
 C:\Users\ferlu\Documents\Web\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
 C:\Users\ferlu\Documents\Web\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
 C:\Users\ferlu\Documents\Web\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.deps.json
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csprojAssemblyReference.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csproj.CoreCompileInputs.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfoInputs.cache
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb

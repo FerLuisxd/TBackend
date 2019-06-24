@@ -51,7 +51,7 @@ namespace TBackend.Service.implementation
                     }
                 case 2:
                     {
-                        return "";
+                        Console.WriteLine("CASE 2");
                         return modeService.GenerateMatchesMode2(teams, fase,tournamentId);
                     }
                 default:
