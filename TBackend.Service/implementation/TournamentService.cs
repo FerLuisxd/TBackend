@@ -112,23 +112,26 @@ namespace TBackend.Service.implementation
         public bool Update(Tournament entity)
         {
             var old = this.Get(entity.Id);
-            if (old.PlayerId != entity.PlayerId){//PLAYER ANTIGUO 
+            if (old.PlayerId != entity.PlayerId)
+            {//PLAYER ANTIGUO 
                 Console.WriteLine("DIFERNTE");
                 if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)//SI TIENE TORNEO
                     if (entity.Date > DateTime.Now.AddDays(-1))//))//24 HORAS ANTES MAXIMO PARA EDITAR
-                        if(tournamentRepository.FindName(entity.Name).Count<1)
+                        if (tournamentRepository.FindName(entity.Name).Count < 1)
                             return tournamentRepository.Update(entity);
                         else return false;
                     else return false;
-                else return false;}
-            else if (old.PlayerId == entity.PlayerId){//MISMO PLAYER ID
+                else return false;
+            }
+            else if (old.PlayerId == entity.PlayerId)
+            {//MISMO PLAYER ID
                 Console.WriteLine("IGUAL");
                 if (entity.Date > DateTime.Now.AddDays(-1))//24 HORAS ANTES MAXIMO PARA EDITAR
-                    if(tournamentRepository.FindName(entity.Name).Count<1)
-                            return tournamentRepository.Update(entity);
-                        else return false;
+                    //if(tournamentRepository.FindName(entity.Name).Count<1)
+                    return tournamentRepository.Update(entity);
+                    //else return false;
                 else return false;
-                }
+            }
             else return false;
         }
 
