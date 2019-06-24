@@ -30,7 +30,7 @@ namespace TBackend.Api.Controllers
                 statisticsService.getStatistic(id)
             );
         }
-        [HttpGet("tournament/{id}")]
+        [HttpGet("match/{id}")]
         public ActionResult getStatistic(int id)
         {
             return Ok(
