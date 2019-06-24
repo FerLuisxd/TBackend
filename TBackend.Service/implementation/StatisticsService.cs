@@ -44,6 +44,11 @@ namespace TBackend.Service.implementation
             return statisticsRepository.getStatistic(id);
         }
 
+        public IEnumerable<StatisticsDto> getStatisticParam(ParamsDto param)
+        {
+            return statisticsRepository.getStatisticParam(param);
+        }
+
         public IEnumerable<StatisticsDto> getStatisticsPlayer(int id)
         {
             return statisticsRepository.getStatisticsPlayer(id);

@@ -183,5 +183,30 @@ namespace TBackend.Repository.implementation
                Match = o.Match
             });
         }
+
+        public IEnumerable<StatisticsDto> getStatisticParam(ParamsDto param)
+        {
+            var result = context.Statistics
+            .Include(t => t.Player)
+            .Include(t => t.Match)
+            .Where(t => t.Assists >= param.Assists)
+            .Where(t=>  t.Damage >= param.Assists)
+            .Where(t=> t.Deaths >= param.Damage)
+            .Where(t=> t.Kills>=param.Kills)
+            .ToList();
+
+            return result.Select(o => new StatisticsDto
+            {
+               Id = o.Id,
+               Assists = o.Assists,
+               Damage = o.Damage,
+               Deaths = o.Deaths,
+               Kills = o.Kills,
+               PlayerName = o.Player.Name,
+               PlayerId = o.PlayerId,
+               MatchId = o.MatchId,
+               Match = o.Match
+            });
+        }
     }
 }

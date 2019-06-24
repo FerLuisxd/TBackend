@@ -1,7 +1,7 @@
 using TBackend.Entity;
 using TBackend.Service;
 using Microsoft.AspNetCore.Mvc;
-
+using TBackend.Repository.dto;
 namespace TBackend.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -43,6 +43,13 @@ namespace TBackend.Api.Controllers
         {
             return Ok(
                 statisticsService.getStatisticsPlayer(id)
+            );
+        }
+        [HttpGet("params")]
+        public ActionResult getParams([FromBody] ParamsDto param)
+        {
+            return Ok(
+                statisticsService.getStatisticParam(param)
             );
         }
         [HttpPost]

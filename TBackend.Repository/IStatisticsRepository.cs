@@ -15,5 +15,6 @@ namespace TBackend.Repository
         IEnumerable<StatisticsDto> getAllStatisticsMatchId(int id);
         IEnumerable<StatisticsDto> getStatisticsPlayer(int id);
         StatisticsDto getStatistic(int id);
+        IEnumerable<StatisticsDto> getStatisticParam(ParamsDto param);
     }
 }
