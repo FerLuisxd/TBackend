@@ -45,7 +45,7 @@ namespace TBackend.Api.Controllers
                 statisticsService.getStatisticsPlayer(id)
             );
         }
-        [HttpGet("params")]
+        [HttpPost("params")]
         public ActionResult getParams([FromBody] ParamsDto param)
         {
             return Ok(
