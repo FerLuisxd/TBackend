@@ -12,9 +12,6 @@ namespace TBackend.Service.implementation
 
         private ITournamentRepository tournamentRepository;
         private IModeService modeService;
-        private IMatchService matchService;
-        private IStatisticsService statdisticsService;
-        private IPlayerService playerService;
         public TournamentService(ITournamentRepository tournamentRepository,
         IModeService modeService)
         {
@@ -103,7 +100,7 @@ namespace TBackend.Service.implementation
         public bool Save(Tournament entity)
         {
             if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)
-                if(tournamentRepository.FindName(entity.Name).Count<1)
+                if(tournamentRepository.FindName(entity.Name,0).Count<1)
                     return tournamentRepository.Save(entity);
                 else return false;
             else return false;
@@ -117,7 +114,7 @@ namespace TBackend.Service.implementation
                 Console.WriteLine("DIFERNTE");
                 if (tournamentRepository.FindHost(entity.PlayerId).Count < 1)//SI TIENE TORNEO
                     if (entity.Date > DateTime.Now.AddDays(-1))//))//24 HORAS ANTES MAXIMO PARA EDITAR
-                        if (tournamentRepository.FindName(entity.Name).Count < 1)
+                        if (tournamentRepository.FindName(entity.Name,entity.Id).Count < 1)
                             return tournamentRepository.Update(entity);
                         else return false;
                     else return false;
@@ -127,9 +124,9 @@ namespace TBackend.Service.implementation
             {//MISMO PLAYER ID
                 Console.WriteLine("IGUAL");
                 if (entity.Date > DateTime.Now.AddDays(-1))//24 HORAS ANTES MAXIMO PARA EDITAR
-                    //if(tournamentRepository.FindName(entity.Name).Count<1)
+                    if(tournamentRepository.FindName(entity.Name,entity.Id).Count<1)
                     return tournamentRepository.Update(entity);
-                    //else return false;
+                    else return false;
                 else return false;
             }
             else return false;

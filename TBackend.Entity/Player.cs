@@ -7,6 +7,7 @@ namespace TBackend.Entity
         public string GamePreferences { get; set; }
         public int? TeamId { get; set; }                
         public Team Team { get; set; }
+        //public IEnumerable<Player> Players { get; set; }
         
     }
 }

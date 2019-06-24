@@ -199,12 +199,13 @@ namespace TBackend.Repository.implementation
             return result;
         }
 
-        public List<Tournament> FindName(string name)
+        public List<Tournament> FindName(string name,int id)
         {
             var result = new List<Tournament>();
             try
             {
                 result = context.Tournaments.Where(x => x.Name == name)
+                .Where(x => x.Id != id)
                 .ToList();
             }
 

@@ -74,11 +74,11 @@ namespace TBackend.Service.implementation
                 tournament.NTeams = tournament.NTeams+1;
                 tournamentRepository.Update(tournament);
             }
-            if(entity.NMembers>2){
-                return teamRepository.Update(entity);
+            //if(entity.NMembers>=2){
+            return teamRepository.Update(entity);
             
-            }
-            else return false;
+            //}
+            //else return false;
             }
             else return false;
         }

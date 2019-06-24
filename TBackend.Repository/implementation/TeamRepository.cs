@@ -130,6 +130,7 @@ namespace TBackend.Repository.implementation
         {
           var result = context.Teams
             .Include(t => t.Tournament)
+            //.Include(t=> t.)
             .ToList();
 
            return result.Select(o => new TeamDto
