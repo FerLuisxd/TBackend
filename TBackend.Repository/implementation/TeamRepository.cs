@@ -3,6 +3,7 @@ using System.Linq;
 using TBackend.Entity;
 using TBackend.Repository.context;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace TBackend.Repository.implementation
 {
@@ -52,6 +53,10 @@ namespace TBackend.Repository.implementation
         {
             try
             {
+                if(entity.TournamentId ==null)
+                    entity.TournamentId=null;
+                Console.WriteLine("TournamentId");
+                Console.WriteLine(entity.TournamentId);
                 context.Add(entity);
                 context.SaveChanges();
             }
@@ -70,7 +75,7 @@ namespace TBackend.Repository.implementation
                 var TeamOrigina = context.Teams.Single(
                     x => x.Id == entity.Id
                 );
-
+                
                 TeamOrigina.Id = entity.Id;
                 TeamOrigina.NMembers = entity.NMembers;
                 TeamOrigina.TournamentId = entity.TournamentId;
@@ -132,9 +137,9 @@ namespace TBackend.Repository.implementation
             Id = o.Id,
             NMembers = o.NMembers,
             Name = o.Name,
-            TournamentId = o.TournamentId.GetValueOrDefault(),
-            TournamentName =o.TournamentId!=null? o.Tournament.Name:null,
             Tournament = o.TournamentId!=null? o.Tournament:null,
+            TournamentId = o.TournamentId.GetValueOrDefault(),
+             TournamentName =o.TournamentId!=null? o.Tournament.Name:null
         });
 
         }

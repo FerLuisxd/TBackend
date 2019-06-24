@@ -62,6 +62,7 @@ namespace TBackend.Service.implementation
         public bool Update(Team entity)
         {
             Team old = teamRepository.Get(entity.Id);
+            if(old.NMembers>=2){
             if(old.TournamentId != null){
                 Tournament tournament = tournamentRepository.Get(entity.TournamentId.GetValueOrDefault());
                 tournament.NTeams = tournament.NTeams-1;
@@ -75,6 +76,9 @@ namespace TBackend.Service.implementation
             }
             if(entity.NMembers>2){
                 return teamRepository.Update(entity);
+            
+            }
+            else return false;
             }
             else return false;
         }
