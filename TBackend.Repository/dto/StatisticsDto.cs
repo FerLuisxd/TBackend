@@ -10,6 +10,7 @@ namespace TBackend.Repository.dto
         public int Id { get; set; }
         public int MatchId { get; set; }
         public Match Match {get;set;}
+        public Player Player {get;set;}
         public int PlayerId { get; set; }
         public string PlayerName  { get; set; }
 
@@ -17,5 +18,8 @@ namespace TBackend.Repository.dto
         public float Deaths { get; set; }
         public float Assists { get; set; }
         public float Damage { get; set; }
+        //public IEnumerable<Team> Teams { get; set; }
+    //     public string PlayerTeam{get;set;}
+    //     public Team Team {get;set;}
     }
 }

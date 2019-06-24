@@ -93,6 +93,8 @@ namespace TBackend.Repository.implementation
         {
             var result = context.Statistics
             .Include(t => t.Player)
+            //.Include(t => t.)
+            //.Include(t => t.Player.Team)
             .Include(t => t.Match)
             .ToList();
 
@@ -106,7 +108,9 @@ namespace TBackend.Repository.implementation
                PlayerName = o.Player.Name,
                PlayerId = o.PlayerId,
                MatchId = o.MatchId,
-               Match = o.Match
+               Match = o.Match,
+               //PlayerTeam = o.Player.Team.Name,
+               Player = o.Player
             });
         }
 
@@ -128,7 +132,8 @@ namespace TBackend.Repository.implementation
                PlayerName = o.Player.Name,
                PlayerId = o.PlayerId,
                MatchId = o.MatchId,
-               Match = o.Match
+               Match = o.Match,
+               Player = o.Player
             });
         }
 
@@ -152,6 +157,7 @@ namespace TBackend.Repository.implementation
                 result.PlayerId = o.PlayerId;
                 result.MatchId = o.MatchId;
                 result.Match = o.Match;
+                result.Player = o.Player;
             }
 
             catch (System.Exception)
@@ -180,7 +186,8 @@ namespace TBackend.Repository.implementation
                PlayerName = o.Player.Name,
                PlayerId = o.PlayerId,
                MatchId = o.MatchId,
-               Match = o.Match
+               Match = o.Match,
+               Player = o.Player
             });
         }
 
@@ -205,7 +212,8 @@ namespace TBackend.Repository.implementation
                PlayerName = o.Player.Name,
                PlayerId = o.PlayerId,
                MatchId = o.MatchId,
-               Match = o.Match
+               Match = o.Match,
+               Player = o.Player
             });
         }
     }
