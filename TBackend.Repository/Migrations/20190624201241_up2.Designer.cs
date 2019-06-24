@@ -9,8 +9,8 @@ using TBackend.Repository.context;
 namespace TBackend.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190624025626_up3")]
-    partial class up3
+    [Migration("20190624201241_up2")]
+    partial class up2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -93,6 +93,8 @@ namespace TBackend.Repository.Migrations
 
                     b.Property<int>("PlayerId");
 
+                    b.Property<string>("TeamName");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MatchId");
@@ -171,7 +173,7 @@ namespace TBackend.Repository.Migrations
             modelBuilder.Entity("TBackend.Entity.Player", b =>
                 {
                     b.HasOne("TBackend.Entity.Team", "Team")
-                        .WithMany()
+                        .WithMany("Players")
                         .HasForeignKey("TeamId");
                 });
 

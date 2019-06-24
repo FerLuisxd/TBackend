@@ -109,6 +109,7 @@ namespace TBackend.Service.implementation
         public bool Update(Tournament entity)
         {
             var old = this.Get(entity.Id);
+            if(old.Winner==null || old.Winner==string.Empty){
             if (old.PlayerId != entity.PlayerId)
             {//PLAYER ANTIGUO 
                 Console.WriteLine("DIFERNTE");
@@ -128,6 +129,8 @@ namespace TBackend.Service.implementation
                     return tournamentRepository.Update(entity);
                     else return false;
                 else return false;
+            }
+            else return false;
             }
             else return false;
         }

@@ -91,6 +91,8 @@ namespace TBackend.Repository.Migrations
 
                     b.Property<int>("PlayerId");
 
+                    b.Property<string>("TeamName");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MatchId");
@@ -169,7 +171,7 @@ namespace TBackend.Repository.Migrations
             modelBuilder.Entity("TBackend.Entity.Player", b =>
                 {
                     b.HasOne("TBackend.Entity.Team", "Team")
-                        .WithMany()
+                        .WithMany("Players")
                         .HasForeignKey("TeamId");
                 });
 

@@ -13,6 +13,7 @@ namespace TBackend.Entity
         public float Deaths { get; set; }
         public float Assists { get; set; }
         public float Damage { get; set; }
+        public string TeamName {get;set;}
         //public IEnumerable<Team> Teams { get; set; }
         //public string PlayerTeam{get;set;}
         // public Team Team {get;set;}
