@@ -130,7 +130,7 @@ namespace TBackend.Repository.implementation
         {
           var result = context.Teams
             .Include(t => t.Tournament)
-            //.Include(t=> t.)
+            .Include(t=> t.Players)
             .ToList();
 
            return result.Select(o => new TeamDto
@@ -140,8 +140,9 @@ namespace TBackend.Repository.implementation
             Name = o.Name,
             Tournament = o.TournamentId!=null? o.Tournament:null,
             TournamentId = o.TournamentId.GetValueOrDefault(),
-             TournamentName =o.TournamentId!=null? o.Tournament.Name:null
-        });
+             TournamentName =o.TournamentId!=null? o.Tournament.Name:null,
+             Players = o.Players
+        }); 
 
         }
 
@@ -161,7 +162,9 @@ namespace TBackend.Repository.implementation
                 result.TournamentId = o.TournamentId.GetValueOrDefault();
                 if(o.TournamentId!=null){
                 result.TournamentName = o.Tournament.Name;
-                result.Tournament = o.Tournament;}
+                result.Tournament = o.Tournament;
+                result.Players = o.Players;
+                }
             }
 
             catch (System.Exception)
