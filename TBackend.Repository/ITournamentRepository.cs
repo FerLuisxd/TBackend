@@ -14,5 +14,6 @@ namespace TBackend.Repository
         IEnumerable<TournamentDto> GetAllTournaments();
         bool CanGenerate(int id);
         TournamentDto getOneTournament(int id);
+        List<Tournament> FindName(string name);
     }
 }

@@ -198,5 +198,21 @@ namespace TBackend.Repository.implementation
             }
             return result;
         }
+
+        public List<Tournament> FindName(string name)
+        {
+            var result = new List<Tournament>();
+            try
+            {
+                result = context.Tournaments.Where(x => x.Name == name)
+                .ToList();
+            }
+
+            catch (System.Exception)
+            {
+                throw;
+            }
+            return result;
+        }
     }
 }

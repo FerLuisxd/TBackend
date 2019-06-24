@@ -54,7 +54,6 @@ namespace TBackend.Service.implementation
         {
             if (entity.TeamId != null)
             {
-               
                     Team team = teamRepository.Get(entity.TeamId.GetValueOrDefault());
                     team.NMembers = team.NMembers + 1;
                     teamRepository.Update(team);
