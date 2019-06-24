@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TBackend.Entity;
 using TBackend.Repository.context;
+using Microsoft.EntityFrameworkCore;
 
 namespace TBackend.Repository.implementation
 {
@@ -110,6 +111,51 @@ namespace TBackend.Repository.implementation
             try
             {
                 result = context.Teams.Where(x=> x.TournamentId == id).ToList();
+            }
+
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
+
+        public IEnumerable<TeamDto> GetAllTeams()
+        {
+          var result = context.Teams
+            .Include(t => t.Tournament)
+            .ToList();
+
+           return result.Select(o => new TeamDto
+            {
+            Id = o.Id,
+            NMembers = o.NMembers,
+            Name = o.Name,
+            TournamentId = o.TournamentId.GetValueOrDefault(),
+            TournamentName =o.TournamentId!=null? o.Tournament.Name:null,
+            Tournament = o.TournamentId!=null? o.Tournament:null,
+        });
+
+        }
+
+        public TeamDto getTeam(int id)
+        {
+            var result = new TeamDto();
+            try
+            {
+                //result = context.Tournaments.Single(x => x.Id == id);
+                var o = context.Teams
+            .Include(t => t.Tournament)
+            .Single(x => x.Id == id);
+
+                result.Id = o.Id;
+                result.NMembers = o.NMembers;
+                result.Name = o.Name;
+                result.TournamentId = o.TournamentId.GetValueOrDefault();
+                if(o.TournamentId!=null){
+                result.TournamentName = o.Tournament.Name;
+                result.Tournament = o.Tournament;}
             }
 
             catch (System.Exception)

@@ -8,5 +8,8 @@ namespace TBackend.Service
     public interface IPlayerService : IService<Player>
     {
         List<Player> getPlayersFromTeamId(int id);
+
+        IEnumerable<PlayerDto> getPlayers();
+        PlayerDto getPlayer(int id);
     }
 }

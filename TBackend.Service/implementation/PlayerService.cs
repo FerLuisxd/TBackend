@@ -35,9 +35,19 @@ namespace TBackend.Service.implementation
             return playerRepository.GetAll();
         }
 
+        public IEnumerable<PlayerDto> getPlayers()
+        {
+            return playerRepository.getPlayers();
+        }
+
         public List<Player> getPlayersFromTeamId(int id)
         {
             return playerRepository.getPlayersFromTeamId(id);
+        }
+
+        public PlayerDto getPlayer(int id)
+        {
+            return playerRepository.getPlayer(id);
         }
 
         public bool Save(Player entity)

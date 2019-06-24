@@ -20,14 +20,14 @@ namespace TBackend.Api.Controllers
         public ActionResult Get()
         {
             return Ok(
-                teamService.GetAll()
+                teamService.GetAllTeams()
             );
         }
          [HttpGet("{id}")]
         public ActionResult GetId(int id)
         {
             return Ok(
-                teamService.Get(id)
+                teamService.getTeam(id)
             );
         }
 

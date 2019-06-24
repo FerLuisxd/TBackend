@@ -10,5 +10,8 @@ namespace TBackend.Repository
     public interface ITeamRepository: IRepository<Team>
     {
          List<Team> FindAllTeams(int id);
+
+         IEnumerable<TeamDto> GetAllTeams();
+         TeamDto getTeam(int id);
     }
 }

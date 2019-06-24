@@ -38,6 +38,16 @@ namespace TBackend.Service.implementation
            return teamRepository.GetAll();
         }
 
+        public IEnumerable<TeamDto> GetAllTeams()
+        {
+            return teamRepository.GetAllTeams();
+        }
+
+        public TeamDto getTeam(int id)
+        {
+           return teamRepository.getTeam(id);
+        }
+
         public bool Save(Team entity)
         {
             if (entity.TournamentId != null)

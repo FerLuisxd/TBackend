@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TBackend.Entity;
 using TBackend.Repository.context;
+using Microsoft.EntityFrameworkCore;
 
 namespace TBackend.Repository.implementation
 {
@@ -112,6 +113,51 @@ namespace TBackend.Repository.implementation
             try
             {
                 result = context.Players.Where(x=> x.TeamId == id).ToList();
+            }
+
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+            return result;
+        }
+
+        public IEnumerable<PlayerDto> getPlayers()
+        {
+            var result = context.Players
+            .Include(t => t.Team)
+            .ToList();
+
+           return result.Select(o => new PlayerDto
+            {
+            Id = o.Id,
+            GamePreferences = o.GamePreferences,
+            Name = o.Name,
+            Team = o.TeamId != null? o.Team : null ,
+            TeamId = o.TeamId.GetValueOrDefault(),
+            TeamName = o.TeamId != null? o.Team.Name : null,
+        });
+        }
+
+        public PlayerDto getPlayer(int id)
+        {
+           var result = new PlayerDto();
+            try
+            {
+                //result = context.Tournaments.Single(x => x.Id == id);
+                var o = context.Players
+            .Include(t => t.Team)
+            .Single(x => x.Id == id);
+
+                result.Id = o.Id;
+                result.GamePreferences = o.GamePreferences;
+                result.Name = o.Name;
+                
+                result.TeamId = o.TeamId.GetValueOrDefault();
+                if(o.TeamId != null){
+                    result.Team = o.Team;
+                    result.TeamName = o.Team.Name;}
             }
 
             catch (System.Exception)
