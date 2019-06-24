@@ -53,7 +53,8 @@ namespace TBackend.Repository.implementation
                 PlayerId = o.PlayerId,
                 PlayerName = o.Player.Name,
                 Teams = o.Teams,
-                NTeams = o.NTeams
+                NTeams = o.NTeams,
+                Game = o.Game
             });
 
 
@@ -89,6 +90,7 @@ namespace TBackend.Repository.implementation
                 TournamentOrigina.Date = entity.Date;
                 TournamentOrigina.NTeams = entity.NTeams;
                 TournamentOrigina.Name = entity.Name;
+                TournamentOrigina.Game =entity.Game;
 
                 context.Update(TournamentOrigina);
                 context.SaveChanges();
@@ -103,7 +105,21 @@ namespace TBackend.Repository.implementation
 
         public bool Delete(int id)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                var obj = context.Tournaments.Single(
+                    x => x.Id == id
+                );
+
+                context.Tournaments.Remove(obj);
+                context.SaveChanges();
+            }
+            catch (System.Exception)
+            {
+
+               throw;
+            }
+            return true;
         }
         public List<Tournament> FindHost(int id)
         {
@@ -172,6 +188,7 @@ namespace TBackend.Repository.implementation
                 result.PlayerName = o.Player.Name;
                 result.Teams = o.Teams;
                 result.NTeams = o.NTeams;
+                result.Game = o.Game;
             }
 
             catch (System.Exception)

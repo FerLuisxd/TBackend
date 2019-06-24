@@ -7,6 +7,7 @@ namespace TBackend.Entity
     
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Game { get; set; }
         public DateTime Date { get; set; }
         public string Winner { get; set; }
         public int PlayerId { get; set; }

@@ -185,6 +185,7 @@ namespace TBackend.Service.implementation
                     {
                         points[i]++;
                     }
+
                 }
             }
 
@@ -196,6 +197,34 @@ namespace TBackend.Service.implementation
                     mayor=points[i];
                     iwinner = i;
                     Console.WriteLine(iwinner);
+                }
+                else
+                {
+                    if (points[i] == mayor)
+                    {
+                        match = new Match();
+                        aux = new List<Team> { equipos[iwinner], equipos[i] };
+                        winner = this.TrueResults(aux);
+                        if (winner.Id == equipos[i].Id)
+                        {
+                            iwinner = i;
+                            match.WinnerId = equipos[i].Id;
+                        }
+                        else
+                        {
+                            match.WinnerId = equipos[iwinner].Id;
+                        }
+                        match.Team1Id = equipos[iwinner].Id;
+                        match.Team1 = equipos[iwinner];
+                        match.Team2Id = equipos[i].Id;
+                        match.Team2 = equipos[i];
+                        match.TournamentId = TournamentId;
+                        match.Fase = 2;
+                        matchRepository.Save(match);
+                        List<Match> tie = new List<Match>();
+                        tie.Add(match);
+                        matchRepository.GenerateMatches1(tie);
+                    }
                 }
             }
             return equipos[iwinner].Name;

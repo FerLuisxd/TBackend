@@ -89,7 +89,21 @@ namespace TBackend.Repository.implementation
 
         public bool Delete(int id)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                var obj = context.Players.Single(
+                    x => x.Id == id
+                );
+
+                context.Players.Remove(obj);
+                context.SaveChanges();
+            }
+            catch (System.Exception)
+            {
+
+               throw;
+            }
+            return true;
         }
 
         public List<Player> getPlayersFromTeamId(int id)

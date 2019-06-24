@@ -28,7 +28,11 @@ namespace TBackend.Service.implementation
         }
         public bool Delete(int id)
         {
-            return tournamentRepository.Delete(id);
+            var tournament = this.GetOneTournament(id);
+            if(tournament.NTeams<=0)
+                return tournamentRepository.Delete(id);
+            else 
+                return false;
         }
 
         public string generateMatches(int tournamentId, int fase)

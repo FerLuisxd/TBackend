@@ -18,7 +18,11 @@ namespace TBackend.Service.implementation
 
         public bool Delete(int id)
         {
-            return playerRepository.Delete(id);
+            var player = playerRepository.Get(id);
+            if(player.TeamId==null)
+                return playerRepository.Delete(id);
+            else 
+                return false;
         }
 
         public Player Get(int id)
