@@ -74,6 +74,7 @@ namespace TBackend.Service.implementation
                 Console.WriteLine(winner);  
                 Tournament aux = this.Get(tournamentId);
                 aux.Winner = winner.ToString();
+                Console.WriteLine();
                 Console.WriteLine("WINNER");
                 Console.WriteLine(winner.ToString());
                 this.Update(aux);
@@ -109,7 +110,7 @@ namespace TBackend.Service.implementation
         public bool Update(Tournament entity)
         {
             var old = this.Get(entity.Id);
-            if(old.Winner==null || old.Winner==string.Empty){
+            //if(old.Winner==null || old.Winner==string.Empty){
             if (old.PlayerId != entity.PlayerId)
             {//PLAYER ANTIGUO 
                 Console.WriteLine("DIFERNTE");
@@ -125,14 +126,14 @@ namespace TBackend.Service.implementation
             {//MISMO PLAYER ID
                 Console.WriteLine("IGUAL");
                 if (entity.Date > DateTime.Now.AddDays(-1))//24 HORAS ANTES MAXIMO PARA EDITAR
-                    if(tournamentRepository.FindName(entity.Name,entity.Id).Count<1)
+                    //if(tournamentRepository.FindName(entity.Name,entity.Id).Count<1)
                     return tournamentRepository.Update(entity);
-                    else return false;
+                    //else return false;
                 else return false;
             }
             else return false;
-            }
-            else return false;
+            //}
+            //else return false;
         }
 
         public TournamentDto GetOneTournament(int id)
