@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {}
+    "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+    "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
         "projectName": "TBackend.Entity",
-        "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
-        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\obj\\",
+        "projectPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+        "packagesPath": "C:\\Users\\FerLuis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FerLuis\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -47,27 +44,30 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {
+    "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
         "projectName": "TBackend.Repository",
-        "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
-        "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Repository\\obj\\",
+        "projectPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Repository\\TBackend.Repository.csproj",
+        "packagesPath": "C:\\Users\\FerLuis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FerLuis\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
-                "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
+              "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj": {
+                "projectPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj"
               }
             }
           }
@@ -109,10 +109,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

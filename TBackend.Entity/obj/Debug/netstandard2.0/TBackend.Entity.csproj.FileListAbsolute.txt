@@ -61,3 +61,12 @@ C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.En
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.deps.json
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csprojAssemblyReference.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfoInputs.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.AssemblyInfo.cs
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Entity\obj\Debug\netstandard2.0\TBackend.Entity.csproj.CoreCompileInputs.cache

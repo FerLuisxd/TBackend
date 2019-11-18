@@ -96,3 +96,17 @@ C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Se
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.csproj.CopyComplete
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.dll
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Service.deps.json
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Service.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Service.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Repository.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Repository.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.csprojAssemblyReference.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.AssemblyInfoInputs.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.AssemblyInfo.cs
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.csproj.CopyComplete
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Service\obj\Debug\netstandard2.0\TBackend.Service.csproj.CoreCompileInputs.cache

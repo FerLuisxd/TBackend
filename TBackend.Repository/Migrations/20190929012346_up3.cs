@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TBackend.Repository.Migrations
 {
-    public partial class up2 : Migration
+    public partial class up3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

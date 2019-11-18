@@ -179,23 +179,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferlu\\.nuget\\packages\\": {},
+    "C:\\Users\\FerLuis\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
       "projectName": "TBackend.Entity",
-      "projectPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
-      "packagesPath": "C:\\Users\\ferlu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferlu\\Documents\\TBackend\\TBackend.Entity\\obj\\",
+      "projectPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\TBackend.Entity.csproj",
+      "packagesPath": "C:\\Users\\FerLuis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FerLuis\\Documents\\TBackend\\TBackend.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ferlu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\FerLuis\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

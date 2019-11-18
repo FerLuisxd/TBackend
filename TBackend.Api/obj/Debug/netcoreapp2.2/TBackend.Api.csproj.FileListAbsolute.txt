@@ -145,3 +145,24 @@ C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Ap
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csproj.CopyComplete
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.dll
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.deps.json
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.runtimeconfig.json
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.runtimeconfig.dev.json
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Api.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Entity.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Repository.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Service.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Entity.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Service.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\bin\Debug\netcoreapp2.2\TBackend.Repository.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csprojAssemblyReference.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.RazorAssemblyInfo.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.RazorAssemblyInfo.cs
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.AssemblyInfoInputs.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.AssemblyInfo.cs
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.RazorTargetAssemblyInfo.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csproj.CopyComplete
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Api\obj\Debug\netcoreapp2.2\TBackend.Api.csproj.CoreCompileInputs.cache

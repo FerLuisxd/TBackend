@@ -9,14 +9,14 @@ using TBackend.Repository.context;
 namespace TBackend.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190624201241_up2")]
-    partial class up2
+    [Migration("20190929012346_up3")]
+    partial class up3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062");
+                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
             modelBuilder.Entity("TBackend.Entity.Match", b =>
                 {

@@ -82,3 +82,15 @@ C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Re
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csproj.CopyComplete
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.dll
 C:\Users\roloz\OneDrive\Desktop\Aplicaciones Web\TFinal 0.1\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Repository.deps.json
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Repository.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Repository.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Entity.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\bin\Debug\netstandard2.0\TBackend.Entity.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csprojAssemblyReference.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.AssemblyInfoInputs.cache
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.AssemblyInfo.cs
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csproj.CopyComplete
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.dll
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.pdb
+C:\Users\FerLuis\Documents\TBackend\TBackend.Repository\obj\Debug\netstandard2.0\TBackend.Repository.csproj.CoreCompileInputs.cache
